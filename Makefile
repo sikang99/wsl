@@ -34,8 +34,8 @@ run-upgrade ra:
 	sudo -S env RELEASE_UPGRADER_NO_SCREEN=1 do-release-upgrade
 
 run-git rg:
-	git add README.md Makefile
-	git commit -m "add Makefile"
+	git add README.md Makefile .bashrc
+	git commit -m "add .bashrc"
 	git push -u origin master
 
 set-git sg:
@@ -50,4 +50,5 @@ set-display sd:
 	sudo dbus-uuidgen --ensure
 
 set-docker sk:
+	export DOCKER_HOST='tcp://0.0.0.0:2375'
 
