@@ -18,8 +18,10 @@ Setting Linux Environment for Windows 10
 * 2017/10/27 [Installing the Docker client on Windows Subsystem for Linux (Ubuntu)](https://medium.com/@sebagomez/installing-the-docker-client-on-ubuntus-windows-subsystem-for-linux-612b392a44c4)
 
 
-
 #### History
 
 2018/06/30:
    - docker client on WSL Linux has successfully connected to docker server on Windows 10
+2018/06/29:
+   - Visual Studio code has not executed silently on WSL
+
