@@ -116,6 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# -------------------------------------------------------------------
 # Set User environment
 PATH="/bin:/usr/bin:/usr/local/bin:$HOME/.local/bin"
 
