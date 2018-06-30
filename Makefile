@@ -36,7 +36,6 @@ run-upgrade ra:
 run-git rg:
 	git add README.md Makefile .bashrc
 	git commit -m "add .bashrc"
-	#git remote set-url origin https://sikang99:kang1121@github.com/sikang99/wsl.git
 	git push -u origin master
 
 set-git sg:
@@ -46,6 +45,8 @@ set-git sg:
 	git add README.md
 	git commit -m "first commit"
 	git remote add origin https://github.com/sikang99/wsl.git
+	git remote set-url origin https://sikang99@github.com/sikang99/wsl.git
+	git push -u origin master
 
 set-display sd:
 	sudo apt install dbus-x11
