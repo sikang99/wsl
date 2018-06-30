@@ -1,6 +1,6 @@
 #
-# Makefile by stoney
-# Linux management
+# Makefile by stoney.kang (sikang99@gmail.com)
+# Linux setting for Windows 10
 #
 all: usage
 
