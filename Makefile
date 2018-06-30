@@ -39,6 +39,8 @@ run-git rg:
 	git push -u origin master
 
 set-git sg:
+	git config --global user.name "Stoney Kang"
+	git config --global user.email sikang99@gmail.com
 	git init
 	git add README.md
 	git commit -m "first commit"
