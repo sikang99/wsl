@@ -26,21 +26,21 @@ Setting Linux Environment for Windows 10
 $ docker -H tcp://0.0.0.0:2375 images
 $ docker version
 Client:
-Version:      1.13.1
-API version:  1.26
-Go version:   go1.6.2
-Git commit:   092cba3
-Built:        Thu Nov  2 20:40:23 2017
-OS/Arch:      linux/amd64
+ Version:      1.13.1
+ API version:  1.26
+ Go version:   go1.6.2
+ Git commit:   092cba3
+ Built:        Thu Nov  2 20:40:23 2017
+ OS/Arch:      linux/amd64
 
 Server:
-Version:      18.03.1-ce
-API version:  1.37 (minimum version 1.12)
-Go version:   go1.9.5
-Git commit:   9ee9f40
-Built:        Thu Apr 26 07:22:38 2018
-OS/Arch:      linux/amd64
-Experimental: false
+ Version:      18.03.1-ce
+ API version:  1.37 (minimum version 1.12)
+ Go version:   go1.9.5
+ Git commit:   9ee9f40
+ Built:        Thu Apr 26 07:22:38 2018
+ OS/Arch:      linux/amd64
+ Experimental: false
 ```
 - 2018/06/29:
   Visual Studio code(/usr/bin/code) has not executed silently on WSL
