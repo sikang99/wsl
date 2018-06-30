@@ -20,8 +20,11 @@ Setting Linux Environment for Windows 10
 
 #### History
 
-2018/06/30:
-   - docker client on WSL Linux has successfully connected to docker server on Windows 10
-2018/06/29:
-   - Visual Studio code has not executed silently on WSL
+- 2018/06/30:
+  docker client on WSL Linux has successfully connected to docker server on Windows 10
+  ```
+  docker -H tcp://0.0.0.0:2375 images
+  ```
+- 2018/06/29:
+  Visual Studio code has not executed silently on WSL
 
