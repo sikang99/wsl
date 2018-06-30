@@ -6,7 +6,7 @@ all: usage
 
 usage:
 	@echo ""
-	@echo "usage: make [e:dit|r:un]"
+	@echo "usage: make [e:dit|r:un|s:et]"
 	@echo ""
 
 edit e:
@@ -37,6 +37,11 @@ run-git rg:
 	git add README.md Makefile .bashrc .vimrc
 	git commit -m "add .vimrc"
 	git push -u origin master
+
+set s:
+	@echo ""
+	@echo "make set [git|display|docker]"
+	@echo ""
 
 set-git sg:
 	git config --global user.name "Stoney Kang"
