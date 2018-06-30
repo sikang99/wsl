@@ -6,8 +6,8 @@ Setting Linux Environment for Windows 10
 
 
 #### X-Window Server for Windows
-* [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/)
-* [X410](http://token2shell.com/x410/)
+* [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/) : Free
+* [X410](http://token2shell.com/x410/) : Paid
 
 
 #### Docker for Windows
