@@ -178,7 +178,7 @@ alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 . /usr/share/autojump/autojump.sh
 . $HOME/coding/cpp/src/emsdk/emsdk_env.sh
 
-# Set X-Window environment variables
+# Set X-Window/docker environment variables
 export DISPLAY='127.0.0.1:0.0'
 export LIBGL_ALWAYS_INDIRECT=1
 export DOCKER_HOST='tcp://0.0.0.0:2375'

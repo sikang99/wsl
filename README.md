@@ -17,3 +17,9 @@ Setting Linux Environment for Windows 10
 * 2018/06/11 [[번역] Docker 컨테이너를 Windows Bash에서 구동하기](https://blog.yeon.me/goto/1192)
 * 2017/10/27 [Installing the Docker client on Windows Subsystem for Linux (Ubuntu)](https://medium.com/@sebagomez/installing-the-docker-client-on-ubuntus-windows-subsystem-for-linux-612b392a44c4)
 
+
+
+#### History
+
+2018/06/30:
+   - docker client on WSL Linux has successfully connected to docker server on Windows 10
