@@ -24,6 +24,7 @@ Setting Linux Environment for Windows 10
   A docker client on WSL Linux has successfully connected to the docker server on Windows 10
 ```
 $ docker -H tcp://0.0.0.0:2375 images
+$ export DOCKER_HOST='tcp://0.0.0.0:2375'
 $ docker version
 Client:
  Version:      1.13.1
