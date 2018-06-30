@@ -34,8 +34,8 @@ run-upgrade ra:
 	sudo -S env RELEASE_UPGRADER_NO_SCREEN=1 do-release-upgrade
 
 run-git rg:
-	git add README.md Makefile .bashrc
-	git commit -m "add .bashrc"
+	git add README.md Makefile .bashrc .vimrc
+	git commit -m "add .vimrc"
 	git push -u origin master
 
 set-git sg:
