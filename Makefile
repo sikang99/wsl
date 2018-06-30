@@ -36,7 +36,7 @@ run-upgrade ra:
 run-git rg:
 	git add README.md Makefile .bashrc
 	git commit -m "add .bashrc"
-	git remote add origin https://github.com/sikang99/wsl.git
+	git remote set-url origin https://github.com/sikang99/wsl.git
 	git push -u origin master
 
 set-git sg:
