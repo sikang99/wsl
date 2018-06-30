@@ -44,5 +44,8 @@ Server:
  Experimental: false
 ```
 - 2018/06/29:
-  Visual Studio code(/usr/bin/code) has not executed silently on WSL
+  Visual Studio code(/usr/bin/code) has not executed silently on WSL. What's the problem?
+
+- 2018/06/28:
+  go1.11beta1 was installed and tested for WebAssembly samples. js.Global.Get() should be changed js.Global().Get().
 
