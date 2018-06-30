@@ -45,7 +45,7 @@ set-git sg:
 	git add README.md
 	git commit -m "first commit"
 	git remote add origin https://github.com/sikang99/wsl.git
-	git remote set-url origin https://sikang99:-------1@github.com/sikang99/wsl.git
+	git remote set-url origin https://sikang99:****@github.com/sikang99/wsl.git
 	git push -u origin master
 
 set-display sd:
