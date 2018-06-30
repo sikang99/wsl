@@ -1,24 +1,24 @@
 Setting Linux Environment for Windows 10
 ===
 
-#### Information for setting
+### Information for setting
 - [Setting up Ubuntu (WSL) for Linux GUI Apps](http://token2shell.com/howto/x410/setting-up-wsl-for-linux-gui-apps/)
 - [Updating WSL](http://wsl-guide.org/en/latest/update.html)
 
 
-#### X-Window Server for Windows
+### X-Window Server for Windows
 * [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/) : Free
 * [X410](http://token2shell.com/x410/) : Paid
 
 
-#### Docker for Windows
+### Docker for Windows
 * [Docker Community Edition for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows)
 
 * 2018/06/11 [[번역] Docker 컨테이너를 Windows Bash에서 구동하기](https://blog.yeon.me/goto/1192)
 * 2017/10/27 [Installing the Docker client on Windows Subsystem for Linux (Ubuntu)](https://medium.com/@sebagomez/installing-the-docker-client-on-ubuntus-windows-subsystem-for-linux-612b392a44c4)
 
 
-#### History
+### History
 
 - 2018/06/30:
   A docker client on WSL Linux has successfully connected to the docker server on Windows 10
@@ -47,5 +47,5 @@ Server:
   Visual Studio code(/usr/bin/code) has not executed silently on WSL. What's the problem?
 
 - 2018/06/28:
-  go1.11beta1 was installed and tested for WebAssembly samples. js.Global.Get() should be changed js.Global().Get().
+  go1.11beta1 was installed and tested for WebAssembly samples. ```js.Global.Get()``` should be changed js.Global().Get().
 
