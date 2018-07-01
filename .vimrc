@@ -1,9 +1,9 @@
-set tabstop=4
 
 "Pathogen
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+set tabstop=4
 
 " vim-plug
 " Specify a directory for plugins
