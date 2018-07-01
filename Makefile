@@ -35,7 +35,7 @@ run-upgrade ra:
 
 run-git rg:
 	git add README.md Makefile .bashrc .vimrc doc/
-	git commit -m "add .vimrc"
+	git commit -m "add doc/"
 	git push -u origin master
 
 set s:
