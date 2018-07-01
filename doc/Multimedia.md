@@ -10,7 +10,7 @@ Stoney Kang, sikang99@gmail.com
 - [WAVE Project](https://cta.tech/Research-Standards/Standards-Documents/WAVE-Project/WAVE-Project.aspx)
 
 
-### CMAF (Common Media Application Format)
+### CMAF (Common Media Application Format), MPEG-A Part 19 or ISO/IEC 23000-19
 - 2016/08/04 [MPEG-CMAF: Threat or Opportunity?](https://bitmovin.com/what-is-cmaf-threat-opportunity/)
 
 
@@ -22,4 +22,5 @@ Stoney Kang, sikang99@gmail.com
 
 ### Github
 - [Dash Industry Forum](https://github.com/Dash-Industry-Forum)
+- [google/shaka-player](https://github.com/google/shaka-player) - JavaScript player library / DASH client / MSE-EME player
 
