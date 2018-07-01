@@ -1,6 +1,8 @@
 #
 # Makefile by stoney
 #
+.PHONY: all usage
+
 all : usage
 
 usage:
@@ -13,7 +15,7 @@ edit e:
 	@echo "make edit [blockchain:eb|multimedia:eu|webrtc:et|webassembly:ea]"
 	@echo ""
 
-edit-make em:
+edit-make em:	
 	vi Makefile
 
 edit-blockchain eb:
