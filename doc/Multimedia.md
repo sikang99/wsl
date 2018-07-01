@@ -8,6 +8,7 @@ Stoney Kang, sikang99@gmail.com
 
 ### WAVE (Web Application Video Ecosystem) Project 
 - [WAVE Project](https://cta.tech/Research-Standards/Standards-Documents/WAVE-Project/WAVE-Project.aspx)
+- [MSE and EME v2 Use Cases & Reqs (WAVE Project)](https://www.w3.org/wiki/images/8/8c/Mse-eme-v2-use-cases-reqs-wave.pdf)
 
 
 ### CMAF (Common Media Application Format), MPEG-A Part 19 or ISO/IEC 23000-19
