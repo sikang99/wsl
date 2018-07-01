@@ -15,7 +15,8 @@ Stoney Kang, sikang99@gmail.com
 
 ### DASH (Dynamic Adaptive Streaming over HTTP)
 - [DASH Industry Forum](https://dash-industry-forum.github.io/)
-
+- ISO/IEC 23009-5 SAND (Server And Network assisted DASH)
+- CPIX (Content Protection Information Exchange Format)
 
 ### Github
 - [Dash Industry Forum](https://github.com/Dash-Industry-Forum)
