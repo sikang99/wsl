@@ -27,3 +27,6 @@ Stoney Kang, sikang99@gmail.com
 - [Dash Industry Forum](https://github.com/Dash-Industry-Forum)
 - [google/shaka-player](https://github.com/google/shaka-player) - JavaScript player library / DASH client / MSE-EME player
 
+### Paper
+- 2018/02/22 [Chunked DASH in JavaScript](https://kth.diva-portal.org/smash/get/diva2:1185014/FULLTEXT01.pdf)
+- 2017/10/06 [Evaluation of the Performance of Adaptive HTTP Streaming Systems](https://arxiv.org/pdf/1710.02459.pdf)

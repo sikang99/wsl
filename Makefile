@@ -35,7 +35,7 @@ run-upgrade ra:
 
 run-git rg:
 	git add README.md Makefile .bashrc .vimrc doc/
-	git commit -m "add doc/"
+	git commit -m "add doc/WAVE"
 	git push -u origin master
 
 set s:
