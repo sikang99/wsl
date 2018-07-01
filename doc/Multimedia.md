@@ -9,7 +9,8 @@ Stoney Kang, sikang99@gmail.com
 ### WAVE (Web Application Video Ecosystem) Project 
 - [WAVE Project](https://cta.tech/Research-Standards/Standards-Documents/WAVE-Project/WAVE-Project.aspx)
 - [MSE and EME v2 Use Cases & Reqs (WAVE Project)](https://www.w3.org/wiki/images/8/8c/Mse-eme-v2-use-cases-reqs-wave.pdf)
-
+- [DASH, CMAF AND CTA WAVE](https://dashif.org/wp-content/uploads/2017/11/Stockhammer-DASH-CMAF-WAVE.pdf)
+- [IRT Lab](https://lab.irt.de/)
 
 ### CMAF (Common Media Application Format), MPEG-A Part 19 or ISO/IEC 23000-19
 - [Adaptive Streaming of Traditional and Omnidirectional Media - Events](http://conferences.sigcomm.org/sigcomm/2017/files/tutorial-adaptive-streaming.pdf)
