@@ -11,6 +11,7 @@ Stoney Kang, sikang99@gmail.com
 
 
 ### CMAF (Common Media Application Format), MPEG-A Part 19 or ISO/IEC 23000-19
+- [Adaptive Streaming of Traditional and Omnidirectional Media - Events](http://conferences.sigcomm.org/sigcomm/2017/files/tutorial-adaptive-streaming.pdf)
 - 2016/08/04 [MPEG-CMAF: Threat or Opportunity?](https://bitmovin.com/what-is-cmaf-threat-opportunity/)
 
 
