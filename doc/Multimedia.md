@@ -7,6 +7,11 @@ composed by Stoney Kang, sikang99@gmail.com
 
 #### Wowza
 
+### VR (Virtual Reality)
+- [VR Industry Forum](https://www.vr-if.org)
+- 2017/09/12 [VRIF Draft Guidelines](https://www.vr-if.org/wp-content/uploads/VRIF_Draft_Guidelines-v0.0draft10-2017-09-12.pdf)
+- XR (eXtended Reality) = AR + VR
+
 
 ### AOMedia AV1 Codec
 - 2018/06/28 [HEVC Is Flowing Into AVC Workflows: Survey Report](http://www.streamingmedia.com/Articles/Editorial/Featured-Articles/HEVC-Is-Flowing-Into-AVC-Workflows-Survey-Report-125993.aspx)
