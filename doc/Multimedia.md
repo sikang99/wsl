@@ -9,6 +9,7 @@ composed by Stoney Kang, sikang99@gmail.com
 
 
 ### AOMedia AV1 Codec
+- 2018/06/28 [HEVC Is Flowing Into AVC Workflows: Survey Report](http://www.streamingmedia.com/Articles/Editorial/Featured-Articles/HEVC-Is-Flowing-Into-AVC-Workflows-Survey-Report-125993.aspx)
 
 
 ### WAVE (Web Application Video Ecosystem) Project 
