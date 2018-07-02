@@ -10,7 +10,11 @@ composed by Stoney Kang, sikang99@gmail.com
 		- Versatile Video Coding (VVC)
 
 
-#### Wowza
+#### [Wowza](https://www.wowza.com)
+
+### CDN (Content Delivery Network)
+- 2017/06/17 [Video at Large Scale - Contributions from the Developer Community](https://cloudinary.com/blog/video_at_large_scale_contributions_from_the_developer_community)
+
 
 
 ### VR (Virtual Reality)
