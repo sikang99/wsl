@@ -12,6 +12,8 @@ composed by Stoney Kang, sikang99@gmail.com
 - [IRT Lab](https://lab.irt.de/)
 - [Standards for Global OTT Video: The Global Project](https://docplayer.net/64997448-Standards-for-global-ott-video-the-wave-project.html)
 - [The CTA WAVE Project](https://www.hbbtv.org/wp-content/uploads/2017/01/Jon-Piesing-CTA-WAVE-King-of-the-Mountain-HbbTV-Symposium-2016.pdf)
+- [enTV Rel-14: A Transport System for Next Generation Broadcaster Services](https://www.mcg.upv.es/wp-content/uploads/2018/06/IEEE_BMSB_2018_Keynote_Day1_ThomasStockhammer_Public.pdf)
+		- 3GPP enTV, DASH-IF, Low-Latency DASH, CMAF and CTA WAVE, DVB-I
 
 
 ### CMAF (Common Media Application Format), MPEG-A Part 19 or ISO/IEC 23000-19
