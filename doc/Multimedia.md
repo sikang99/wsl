@@ -4,7 +4,10 @@ composed by Stoney Kang, sikang99@gmail.com
 ### Organization
 #### [Bitmovin](https://bitmovin.com/)
 - [SlideShare](https://www.slideshare.net/bitmovin)
+- [AV1](https://bitmovin.com/av1/)
+		- 30% improvement over VP9 & HEVC
 - 2018/05/01 [MPEG 122 Meeting Report](https://bitmovin.com/mpeg-122-meeting-report/)
+		- Versatile Video Coding (VVC)
 
 
 #### Wowza
