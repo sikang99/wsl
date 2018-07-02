@@ -2,7 +2,7 @@
 composed by Stoney Kang, sikang99@gmail.com
 
 ### Organization
-#### Bitmovin
+#### [Bitmovin](https://bitmovin.com/)
 - [SlideShare](https://www.slideshare.net/bitmovin)
 
 #### Wowza
