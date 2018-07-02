@@ -33,6 +33,9 @@ run-upgrade ra:
 	sudo -S apt-mark hold procps strace sudo
 	sudo -S env RELEASE_UPGRADER_NO_SCREEN=1 do-release-upgrade
 
+run-copy rc:
+	cp $(DOWNLOAD)/WAVE/* doc/WAVE/
+
 run-git rg:
 	git add README.md Makefile .bashrc .vimrc doc/
 	git commit -m "add doc/WAVE"

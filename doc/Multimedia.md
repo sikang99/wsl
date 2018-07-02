@@ -24,6 +24,10 @@ composed by Stoney Kang, sikang99@gmail.com
 - [DASH Industry Forum](https://dash-industry-forum.github.io/)
 - ISO/IEC 23009-5 SAND (Server And Network assisted DASH)
 - CPIX (Content Protection Information Exchange Format)
+- [The State of MPEG-DASH 2017](http://www.streamingmediaglobal.com/Articles/ReadArticle.aspx?ArticleID=116505&PageNum=2) 
+- [MPEG-DASH: Overview, State-of-the-Art, and Future Roadmap](https://www.slideshare.net/christian.timmerer/mpegdash-overview-stateoftheart-and-future-roadmap)
+
+
 
 
 ### Github
