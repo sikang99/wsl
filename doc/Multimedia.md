@@ -11,6 +11,8 @@ composed by Stoney Kang, sikang99@gmail.com
 - [DASH, CMAF AND CTA WAVE](https://dashif.org/wp-content/uploads/2017/11/Stockhammer-DASH-CMAF-WAVE.pdf)
 - [IRT Lab](https://lab.irt.de/)
 - [Standards for Global OTT Video: The Global Project](https://docplayer.net/64997448-Standards-for-global-ott-video-the-wave-project.html)
+- [The CTA WAVE Project](https://www.hbbtv.org/wp-content/uploads/2017/01/Jon-Piesing-CTA-WAVE-King-of-the-Mountain-HbbTV-Symposium-2016.pdf)
+
 
 ### CMAF (Common Media Application Format), MPEG-A Part 19 or ISO/IEC 23000-19
 - [Adaptive Streaming of Traditional and Omnidirectional Media - Events](http://conferences.sigcomm.org/sigcomm/2017/files/tutorial-adaptive-streaming.pdf)
