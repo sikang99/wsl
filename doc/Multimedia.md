@@ -29,6 +29,8 @@ composed by Stoney Kang, sikang99@gmail.com
 - CPIX (Content Protection Information Exchange Format)
 - [The State of MPEG-DASH 2017](http://www.streamingmediaglobal.com/Articles/ReadArticle.aspx?ArticleID=116505&PageNum=2) 
 - [MPEG-DASH: Overview, State-of-the-Art, and Future Roadmap](https://www.slideshare.net/christian.timmerer/mpegdash-overview-stateoftheart-and-future-roadmap)
+- [Anatomy of DASH Client](http://employees.org/~acbegen/files/slides/slides_DASH_Workshop17.pdf)
+
 
 ### W3C
 - 2018/05/23 [IMSC: End-to-End Internet Subtitles and Captions](http://subtitling.irt.de/subtech/assets/presentation/imsc-e2e-20180523-v4.pdf)
