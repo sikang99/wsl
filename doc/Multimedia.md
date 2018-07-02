@@ -3,6 +3,8 @@ composed by Stoney Kang, sikang99@gmail.com
 
 ### Organization
 #### Bitmovin
+- [SlideShare](https://www.slideshare.net/bitmovin)
+
 #### Wowza
 
 
