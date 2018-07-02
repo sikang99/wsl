@@ -23,6 +23,8 @@ composed by Stoney Kang, sikang99@gmail.com
 - [VR Industry Forum](https://www.vr-if.org)
 - 2017/09/12 [VRIF Draft Guidelines](https://www.vr-if.org/wp-content/uploads/VRIF_Draft_Guidelines-v0.0draft10-2017-09-12.pdf)
 - XR (eXtended Reality) = AR + VR
+- [Immersive Web Community Group](https://github.com/immersive-web)
+		- WebVR, WebXR
 
 
 ### AOMedia AV1 Codec

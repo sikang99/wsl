@@ -182,6 +182,8 @@ alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 export DISPLAY='127.0.0.1:0.0'
 export LIBGL_ALWAYS_INDIRECT=1
 export DOCKER_HOST='tcp://0.0.0.0:2375'
+#export DOCKER_CERT_PATH=/mnt/c/Users/201711101/.docker/machine/certs
+#export DOCKER_TLS_VERIFY=1
 
 # Set user environment
 export DOWNLOAD=/mnt/c/Users/201711101/Downloads
