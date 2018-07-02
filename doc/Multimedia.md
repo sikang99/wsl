@@ -9,10 +9,12 @@ composed by Stoney Kang, sikang99@gmail.com
 - 2018/05/01 [MPEG 122 Meeting Report](https://bitmovin.com/mpeg-122-meeting-report/)
 		- Versatile Video Coding (VVC)
 
-
 #### [Wowza](https://www.wowza.com)
 
+#### [CloudFlare](https://www.cloudflare.com/)
+
 ### CDN (Content Delivery Network)
+- 2018/05/23 [MULTICAST ABR: A Pay TV Operator’s Key to Multiscreen Live Streaming](https://ww2.frost.com/frost-perspectives/multicast-abr-pay-tv-operators-key-multiscreen-live-streaming/)
 - 2017/06/17 [Video at Large Scale - Contributions from the Developer Community](https://cloudinary.com/blog/video_at_large_scale_contributions_from_the_developer_community)
 
 
