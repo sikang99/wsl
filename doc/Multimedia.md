@@ -4,8 +4,11 @@ composed by Stoney Kang, sikang99@gmail.com
 ### Organization
 #### [Bitmovin](https://bitmovin.com/)
 - [SlideShare](https://www.slideshare.net/bitmovin)
+- 2018/05/01 [MPEG 122 Meeting Report](https://bitmovin.com/mpeg-122-meeting-report/)
+
 
 #### Wowza
+
 
 ### VR (Virtual Reality)
 - [VR Industry Forum](https://www.vr-if.org)
