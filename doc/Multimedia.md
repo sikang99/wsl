@@ -14,6 +14,7 @@ composed by Stoney Kang, sikang99@gmail.com
 - [The CTA WAVE Project](https://www.hbbtv.org/wp-content/uploads/2017/01/Jon-Piesing-CTA-WAVE-King-of-the-Mountain-HbbTV-Symposium-2016.pdf)
 - [enTV Rel-14: A Transport System for Next Generation Broadcaster Services](https://www.mcg.upv.es/wp-content/uploads/2018/06/IEEE_BMSB_2018_Keynote_Day1_ThomasStockhammer_Public.pdf)
 		- 3GPP enTV, DASH-IF, Low-Latency DASH, CMAF and CTA WAVE, DVB-I
+- [W3C TTML Profiles for Internet Media Subtitles and Captions](http://subtitling.irt.de/subtech/assets/presentation/imsc-e2e-20180523-v4.pdf)
 
 
 ### CMAF (Common Media Application Format), MPEG-A Part 19 or ISO/IEC 23000-19
@@ -29,7 +30,8 @@ composed by Stoney Kang, sikang99@gmail.com
 - [The State of MPEG-DASH 2017](http://www.streamingmediaglobal.com/Articles/ReadArticle.aspx?ArticleID=116505&PageNum=2) 
 - [MPEG-DASH: Overview, State-of-the-Art, and Future Roadmap](https://www.slideshare.net/christian.timmerer/mpegdash-overview-stateoftheart-and-future-roadmap)
 
-
+### W3C
+- 2018/05/23 [IMSC: End-to-End Internet Subtitles and Captions](http://subtitling.irt.de/subtech/assets/presentation/imsc-e2e-20180523-v4.pdf)
 
 
 ### Github
