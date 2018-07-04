@@ -60,6 +60,8 @@ composed by Stoney Kang, sikang99@gmail.com
 - [Anatomy of DASH Client](http://employees.org/~acbegen/files/slides/slides_DASH_Workshop17.pdf)
 - [ABR Low Latency at IBC 2017: A Performance in Four Acts](https://www.cisco.com/c/m/en_us/network-intelligence/service-provider/digital-transformation/reducing-abr-latency.html)
 		- Video Aware Networking
+- 2017/10/23 [Demystifying HTML5 Video Player](https://medium.com/@eyevinntechnology/demystifying-html5-video-player-e480846328f0)
+
 
 ### W3C
 - 2018/05/23 [IMSC: End-to-End Internet Subtitles and Captions](http://subtitling.irt.de/subtech/assets/presentation/imsc-e2e-20180523-v4.pdf)

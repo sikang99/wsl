@@ -19,6 +19,12 @@ Setting Linux Environment for Windows 10
 
 
 ### History
+- 2018/07/02
+  Install gopernote for Juypter notebook
+```
+$ sudo apt install libzmq5-dev
+$i go get github.com/gopherdata/gophernotes
+```
 
 - 2018/06/30:
   A docker client on WSL Linux has successfully connected to the docker server on Windows 10
