@@ -23,7 +23,7 @@ Setting Linux Environment for Windows 10
   Install gopernote for Juypter notebook
 ```
 $ sudo apt install libzmq5-dev
-$i go get github.com/gopherdata/gophernotes
+$ go get github.com/gopherdata/gophernotes
 ```
 
 - 2018/06/30:
