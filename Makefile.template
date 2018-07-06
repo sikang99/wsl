@@ -1,20 +1,51 @@
 #
-# Makefile by stoney
+# Makefile by Stoney.Kang (sikang99@gmail.com)
 #
 all: usage
 
+PGM=sample
+
 usage:
 	@echo ""
-	@echo "usage: make [edit|build|run]"
+	@echo "usage: make [e:dit|b:uild|r:un]"
 	@echo ""
 
+edit e:
+	@echo ""
+	@echo "make (e:dit) [make|readme]"
+	@echo ""
+
+edit-go eg:
+	vi $(PGM).go
+
+edit-python ep:
+	vi $(PGM).py
+
 edit-js ej:
-	vi buffer.js
+	vi $(PGM).js
 
 edit-make em:
 	vi Makefile
 
+edit-readme er:
+	vi README.md
+
 build b:
-	node buffer.js
+	@echo ""
+	@echo "make (b:uild) [nod|go|wasm]"
+	@echo ""
+
+build-node bn:
+	node $(PGM).js
+
+build-go bg:
+	go build -o $(PGM) $(PGM).go
 
 run r:
+	@echo ""
+	@echo "make (r:un) [node|go|wasm]"
+	@echo ""
+
+run r:
+	./$(PGM)
+

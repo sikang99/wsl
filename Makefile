@@ -17,6 +17,9 @@ edit e:
 edit-make em:
 	vi Makefile
 
+edit-template et:
+	vi Makefile.template
+
 edit-readme er:
 	vi README.md
 
