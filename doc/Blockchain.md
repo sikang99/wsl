@@ -7,8 +7,10 @@ Stoney Kang, sikang99@gmail.com
 
 
 ### Projects
-#### [Livepeer](https://livepeer.org/): [Github]()
-#### [Tendermint](https://tendermint.com/): [Github](https://github.com/tendermint/tendermint)
+#### Golang
+- [Livepeer](https://livepeer.org/): [Github]()
+- [Tendermint](https://tendermint.com/): [Github](https://github.com/tendermint/tendermint)
+- [NKN](https://www.nkn.org/): [Github](https://github.com/nknorg/nkn)
 
 
 ### Standards
