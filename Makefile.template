@@ -12,7 +12,7 @@ usage:
 
 edit e:
 	@echo ""
-	@echo "make (e:dit) [make|readme]"
+	@echo "make (e:dit) [m:ake|r:eadme]"
 	@echo ""
 
 edit-go eg:
@@ -32,7 +32,7 @@ edit-readme er:
 
 build b:
 	@echo ""
-	@echo "make (b:uild) [nod|go|wasm]"
+	@echo "make (b:uild) [node|go|rust|wasm]"
 	@echo ""
 
 build-node bn:
