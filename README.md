@@ -21,6 +21,7 @@ Setting Linux Environment for Windows 10
 ### History
 
 - 2018/07/06
+   Solved the problem of not executing visual code
 ```
 $ sudo mkdir -p /run/dbus
 $ sudo dbus-daemon --system
