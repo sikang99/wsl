@@ -46,6 +46,6 @@ run r:
 	@echo "make (r:un) [node|go|wasm]"
 	@echo ""
 
-run r:
+run-go rg:
 	./$(PGM)
 
