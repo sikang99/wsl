@@ -21,6 +21,8 @@ Stoney Kang, sikang99@gmail.com
 #### Golang
 * [GoLangLibs for Blockchain](https://golanglibs.com/category/blockchain?sort=top)
 
+* 2018/04/14 [Code a simple P2P blockchain in Go!](https://medium.com/coinmonks/code-a-simple-p2p-blockchain-in-go-46662601f417)
+		- [go-libp2p](https://github.com/libp2p/go-libp2p)
 
 ### Standards
 - [ISO standards for Smart contracts - ISO/TC 307/WG 3] - “Tokens represent your ownership in Smart contract.”
