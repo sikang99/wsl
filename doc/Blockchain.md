@@ -12,6 +12,7 @@ Stoney Kang, sikang99@gmail.com
 * [Tendermint](https://tendermint.com/): [tendermint/tendermint](https://github.com/tendermint/tendermint)
 * [NKN](https://www.nkn.org/): [nknorg/nkn](https://github.com/nknorg/nkn)
 		- NKN: a Scalable Self-Evolving and Self-Incentivized Decentralized Network
+* [Mint](http://uphack.co): [Hashnode/mint](https://github.com/Hashnode/mint)
 
 
 ### Standards
