@@ -8,9 +8,10 @@ Stoney Kang, sikang99@gmail.com
 
 ### Projects
 #### Golang
-- [Livepeer](https://livepeer.org/): [livepeer](https://github.com/livepeer)
-- [Tendermint](https://tendermint.com/): [tendermint/tendermint](https://github.com/tendermint/tendermint)
-- [NKN](https://www.nkn.org/): [nknorg/nkn](https://github.com/nknorg/nkn)
+* [Livepeer](https://livepeer.org/): [livepeer](https://github.com/livepeer)
+* [Tendermint](https://tendermint.com/): [tendermint/tendermint](https://github.com/tendermint/tendermint)
+* [NKN](https://www.nkn.org/): [nknorg/nkn](https://github.com/nknorg/nkn)
+		- NKN: a Scalable Self-Evolving and Self-Incentivized Decentralized Network
 
 
 ### Standards
