@@ -13,7 +13,7 @@ Stoney Kang, sikang99@gmail.com
 * [NKN](https://www.nkn.org/): [nknorg/nkn](https://github.com/nknorg/nkn)
 		- NKN: a Scalable Self-Evolving and Self-Incentivized Decentralized Network
 * [Mint](http://uphack.co): [Hashnode/mint](https://github.com/Hashnode/mint)
-
+		- Mint Blockchain — Build blockchain powered social apps
 
 ### Standards
 - [ISO standards for Smart contracts - ISO/TC 307/WG 3] - “Tokens represent your ownership in Smart contract.”
