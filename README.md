@@ -19,6 +19,14 @@ Setting Linux Environment for Windows 10
 
 
 ### History
+
+- 2018/07/06
+```
+$ sudo apt purge libpulse0
+$ sudo add-apt-repository ppa:therealkenc/wsl-pulseaudio
+$ sudo apt-get update
+```
+
 - 2018/07/02
   Install gopernote for Juypter notebook
 ```
