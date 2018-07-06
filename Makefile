@@ -34,11 +34,12 @@ run-upgrade ra:
 	sudo -S env RELEASE_UPGRADER_NO_SCREEN=1 do-release-upgrade
 
 run-copy rc:
+	ls $(DOWNLOAD)/WAVE/*
 	cp $(DOWNLOAD)/WAVE/* doc/WAVE/
 
 run-git rg:
-	git add README.md Makefile .bashrc .vimrc doc/
-	git commit -m "add doc/WAVE"
+	git add README.md Makefile Makefile.template .bashrc .vimrc doc/
+	git commit -m "add some stuff"
 	git push -u origin master
 
 set s:

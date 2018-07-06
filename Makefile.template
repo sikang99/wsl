@@ -1,0 +1,20 @@
+#
+# Makefile by stoney
+#
+all: usage
+
+usage:
+	@echo ""
+	@echo "usage: make [edit|build|run]"
+	@echo ""
+
+edit-js ej:
+	vi buffer.js
+
+edit-make em:
+	vi Makefile
+
+build b:
+	node buffer.js
+
+run r:
