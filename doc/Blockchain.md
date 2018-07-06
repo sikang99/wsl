@@ -7,8 +7,8 @@ Stoney Kang, sikang99@gmail.com
 
 
 ### Projects
-#### [Livepeer](https://livepeer.org/)
-#### [Tendermint]()
+#### [Livepeer](https://livepeer.org/) [Github]()
+#### [Tendermint](https://tendermint.com/) [Github](https://github.com/tendermint/tendermint)
 
 
 
