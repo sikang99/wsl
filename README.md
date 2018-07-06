@@ -21,7 +21,7 @@ Setting Linux Environment for Windows 10
 ### History
 
 - 2018/07/06:
-   Solved the problem of not executing visual code
+   Solved the problem of not executing the visual studio code on wsl
 ```
 $ sudo mkdir -p /run/dbus
 $ sudo dbus-daemon --system
