@@ -1,10 +1,10 @@
 #
-# Makefile by Stoney.Kang (sikang99@gmail.com)
+# Makefile Template by Stoney.Kang (sikang99@gmail.com)
 #
-all: usage
-
+.PHONY: all usage
 PGM=sample
 
+all: usage
 usage:
 	@echo ""
 	@echo "usage: make [e:dit|b:uild|r:un]"
@@ -15,13 +15,13 @@ edit e:
 	@echo "make (e:dit) [m:ake|r:eadme]"
 	@echo ""
 
-edit-go eg:
+edit-go eg: $(PGM).go
 	vi $(PGM).go
 
-edit-python ep:
+edit-python ep: $(PGM).py
 	vi $(PGM).py
 
-edit-js ej:
+edit-js ej: $(PGM).js
 	vi $(PGM).js
 
 edit-make em:
