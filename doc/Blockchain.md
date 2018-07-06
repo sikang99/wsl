@@ -14,6 +14,7 @@ Stoney Kang, sikang99@gmail.com
 * [Tendermint](https://tendermint.com/): [tendermint/tendermint](https://github.com/tendermint/tendermint)
 * [Mint](http://uphack.co): [Hashnode/mint](https://github.com/Hashnode/mint)
 		- Mint Blockchain — Build blockchain powered social apps
+* [GenesisKernel/go-genesis](https://github.com/GenesisKernel/go-genesis) - A blockchain platform with a simplified programming language
 
 ### Standards
 - [ISO standards for Smart contracts - ISO/TC 307/WG 3] - “Tokens represent your ownership in Smart contract.”
