@@ -22,6 +22,9 @@ Setting Linux Environment for Windows 10
 
 - 2018/07/06
 ```
+$ sudo mkdir -p /run/dbus
+$ sudo dbus-daemon --system
+$
 $ sudo apt purge libpulse0
 $ sudo add-apt-repository ppa:therealkenc/wsl-pulseaudio
 $ sudo apt-get update
