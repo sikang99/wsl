@@ -6,8 +6,9 @@ Stoney Kang, sikang99@gmail.com
 - Deloitte, [2018 Global Blockchain Survey Report](https://www2.deloitte.com/us/en/pages/consulting/articles/innovation-blockchain-survey.html)
 
 
-
-### [Livepeer](https://livepeer.org/)
+### Projects
+#### [Livepeer](https://livepeer.org/)
+#### [Tendermint]()
 
 
 
