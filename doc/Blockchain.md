@@ -11,6 +11,8 @@ Stoney Kang, sikang99@gmail.com
 #### [Tendermint](https://tendermint.com/): [Github](https://github.com/tendermint/tendermint)
 
 
+### Standards
+- [ISO standards for Smart contracts - ISO/TC 307/WG 3] - “Tokens represent your ownership in Smart contract.”
 
 
 ### Papers
