@@ -8,6 +8,7 @@ Stoney Kang, sikang99@gmail.com
 
 ### Projects
 #### Golang
+* [Gocoin](https://gocoin.pl/): [piotrnar/gocoin](https://github.com/piotrnar/gocoin) - Bitcoin written in Go
 * [Livepeer](https://livepeer.org/): [livepeer](https://github.com/livepeer)
 * [NKN](https://www.nkn.org/): [nknorg/nkn](https://github.com/nknorg/nkn)
 		- NKN: a Scalable Self-Evolving and Self-Incentivized Decentralized Network
@@ -15,6 +16,11 @@ Stoney Kang, sikang99@gmail.com
 * [Mint](http://uphack.co): [Hashnode/mint](https://github.com/Hashnode/mint)
 		- Mint Blockchain — Build blockchain powered social apps
 * [GenesisKernel/go-genesis](https://github.com/GenesisKernel/go-genesis) - A blockchain platform with a simplified programming language
+
+### Tools
+#### Golang
+* [GoLangLibs for Blockchain](https://golanglibs.com/category/blockchain?sort=top)
+
 
 ### Standards
 - [ISO standards for Smart contracts - ISO/TC 307/WG 3] - “Tokens represent your ownership in Smart contract.”
