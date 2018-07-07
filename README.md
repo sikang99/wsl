@@ -25,6 +25,7 @@ Setting Linux Environment for Windows 10
 * 2018/06/19 [Docker command line in WSL](http://codingrandomly.com/2018/06/docker-command-line-wsl/)
 * 2018/06/11 [[번역] Docker 컨테이너를 Windows Bash에서 구동하기](https://blog.yeon.me/goto/1192)
 * 2017/10/27 [Installing the Docker client on Windows Subsystem for Linux (Ubuntu)](https://medium.com/@sebagomez/installing-the-docker-client-on-ubuntus-windows-subsystem-for-linux-612b392a44c4)
+* 2017/05/07 [Setting Up Docker for Windows and WSL to Work Flawlessly](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
 
 
 ### Open Source
@@ -52,7 +53,7 @@ $ sudo apt install -y falkon
 $ sudo mkdir -p /run/dbus
 $ sudo dbus-daemon --system
 ```
-	Replace installed PulseAudio with WSL-based one
+	Replace installed PulseAudio with WSL-based one when you encounter the pthread error.
 ```
 $ sudo apt purge libpulse0
 $ sudo add-apt-repository ppa:therealkenc/wsl-pulseaudio
