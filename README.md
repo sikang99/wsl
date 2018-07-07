@@ -2,8 +2,9 @@ Setting Linux Environment for Windows 10
 ===
 
 ### Information for setting
-- [Setting up Ubuntu (WSL) for Linux GUI Apps](http://token2shell.com/howto/x410/setting-up-wsl-for-linux-gui-apps/)
-- [Updating WSL](http://wsl-guide.org/en/latest/update.html)
+* [Windows Subsystem for Linux Documentation](https://docs.microsoft.com/ko-kr/windows/wsl/about)
+* [Setting up Ubuntu (WSL) for Linux GUI Apps](http://token2shell.com/howto/x410/setting-up-wsl-for-linux-gui-apps/)
+* [Updating WSL](http://wsl-guide.org/en/latest/update.html)
 
 
 ### X-Window Server for Windows
@@ -16,7 +17,15 @@ Setting Linux Environment for Windows 10
 * 2018/06/19 [Docker command line in WSL](http://codingrandomly.com/2018/06/docker-command-line-wsl/)
 * 2018/06/11 [[번역] Docker 컨테이너를 Windows Bash에서 구동하기](https://blog.yeon.me/goto/1192)
 * 2018/01/30 [Hands-On with WSL: Running Graphical Apps](https://virtualizationreview.com/articles/2018/01/30/hands-on-with-wsl-graphical-apps.aspx)
+		- Xming, Cygwin X and vcXsrv
 * 2017/10/27 [Installing the Docker client on Windows Subsystem for Linux (Ubuntu)](https://medium.com/@sebagomez/installing-the-docker-client-on-ubuntus-windows-subsystem-for-linux-612b392a44c4)
+
+
+
+### Open Source
+* [Microsoft/WSL](https://github.com/Microsoft/WSL)
+* [kpocza/LoWe](https://github.com/kpocza/LoWe) - Linux on Windows extender
+
 
 
 ### History
