@@ -174,6 +174,9 @@ alias cls='clear'
 alias d='clear && ls -cF'
 alias chrome='chromium-browser&'
 alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove'
+alias image='eog'
+alias gterm='gnome-terminal &'
+
 
 . /usr/share/autojump/autojump.sh
 . $HOME/coding/cpp/src/emsdk/emsdk_env.sh
