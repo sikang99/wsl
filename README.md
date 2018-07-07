@@ -9,6 +9,7 @@ Setting Linux Environment for Windows 10
 
 
 ### X-Window Server for Windows
+* [Chocolatey](https://chocolatey.org/) - The package manager for Windows
 * [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/) : Free
 * [X410](http://token2shell.com/x410/) : Paid
 * 2018/06/30 [Linux Graphical Applications on Windows](https://ariya.io/2018/06/linux-graphical-applications-on-windows)
