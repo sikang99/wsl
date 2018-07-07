@@ -15,6 +15,7 @@ Setting Linux Environment for Windows 10
 * [Docker Community Edition for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows)
 * 2018/06/19 [Docker command line in WSL](http://codingrandomly.com/2018/06/docker-command-line-wsl/)
 * 2018/06/11 [[번역] Docker 컨테이너를 Windows Bash에서 구동하기](https://blog.yeon.me/goto/1192)
+* 2018/01/30 [Hands-On with WSL: Running Graphical Apps](https://virtualizationreview.com/articles/2018/01/30/hands-on-with-wsl-graphical-apps.aspx)
 * 2017/10/27 [Installing the Docker client on Windows Subsystem for Linux (Ubuntu)](https://medium.com/@sebagomez/installing-the-docker-client-on-ubuntus-windows-subsystem-for-linux-612b392a44c4)
 
 
@@ -28,7 +29,7 @@ Setting Linux Environment for Windows 10
 $ sudo mkdir -p /run/dbus
 $ sudo dbus-daemon --system
 ```
-	Replace PulseAudio with WSL-based one
+	Replace installed PulseAudio with WSL-based one
 ```
 $ sudo apt purge libpulse0
 $ sudo add-apt-repository ppa:therealkenc/wsl-pulseaudio
