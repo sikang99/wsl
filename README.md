@@ -32,6 +32,7 @@ Setting Linux Environment for Windows 10
 * [Microsoft/WSL](https://github.com/Microsoft/WSL) - Issues found on WSL
 * [kpocza/LoWe](https://github.com/kpocza/LoWe) - Linux on Windows extender
 * [paradoxxxzero/butterfly](https://github.com/paradoxxxzero/butterfly) - A web terminal based on websocket and tornado
+* [powerline/fonts](https://github.com/powerline/fonts) - Patched fonts for Powerline users
 
 ### History
 
