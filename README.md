@@ -5,6 +5,7 @@ Setting Linux Environment for Windows 10
 * [Windows Subsystem for Linux Documentation](https://docs.microsoft.com/ko-kr/windows/wsl/about)
 * [Setting up Ubuntu (WSL) for Linux GUI Apps](http://token2shell.com/howto/x410/setting-up-wsl-for-linux-gui-apps/)
 * [Updating WSL](http://wsl-guide.org/en/latest/update.html)
+* 2018/06/16 [Linux on Windows 10 (WSL)](https://www.eshlomo.us/linux-on-windows-10-wsl-intro/)
 
 
 ### X-Window Server for Windows
@@ -23,7 +24,7 @@ Setting Linux Environment for Windows 10
 
 
 ### Open Source
-* [Microsoft/WSL](https://github.com/Microsoft/WSL)
+* [Microsoft/WSL](https://github.com/Microsoft/WSL) - Issues found on WSL
 * [kpocza/LoWe](https://github.com/kpocza/LoWe) - Linux on Windows extender
 
 
