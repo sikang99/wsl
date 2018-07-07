@@ -10,16 +10,16 @@ Setting Linux Environment for Windows 10
 ### X-Window Server for Windows
 * [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/) : Free
 * [X410](http://token2shell.com/x410/) : Paid
+* 2018/06/30 [Linux Graphical Applications on Windows](https://ariya.io/2018/06/linux-graphical-applications-on-windows)
+* 2018/01/30 [Hands-On with WSL: Running Graphical Apps](https://virtualizationreview.com/articles/2018/01/30/hands-on-with-wsl-graphical-apps.aspx)
+		- Xming, Cygwin X and vcXsrv
 
 
 ### Docker for Windows
 * [Docker Community Edition for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows)
 * 2018/06/19 [Docker command line in WSL](http://codingrandomly.com/2018/06/docker-command-line-wsl/)
 * 2018/06/11 [[번역] Docker 컨테이너를 Windows Bash에서 구동하기](https://blog.yeon.me/goto/1192)
-* 2018/01/30 [Hands-On with WSL: Running Graphical Apps](https://virtualizationreview.com/articles/2018/01/30/hands-on-with-wsl-graphical-apps.aspx)
-		- Xming, Cygwin X and vcXsrv
 * 2017/10/27 [Installing the Docker client on Windows Subsystem for Linux (Ubuntu)](https://medium.com/@sebagomez/installing-the-docker-client-on-ubuntus-windows-subsystem-for-linux-612b392a44c4)
-
 
 
 ### Open Source
@@ -27,8 +27,17 @@ Setting Linux Environment for Windows 10
 * [kpocza/LoWe](https://github.com/kpocza/LoWe) - Linux on Windows extender
 
 
-
 ### History
+
+- 2018/07/07: 
+   Installed some packages for Linux
+
+```
+$ sudo apt install ubuntu-desktop
+$ sudo apt install xubuntu-desktop
+
+$ sudo apt install -y falkon
+```
 
 - 2018/07/06:
    Solved the problem of not executing the visual studio code on wsl
