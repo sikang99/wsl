@@ -12,6 +12,7 @@ Setting Linux Environment for Windows 10
 * [Chocolatey](https://chocolatey.org/) - The package manager for Windows
 * [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/) : Free
 * [X410](http://token2shell.com/x410/) : Paid
+* [MobaXterm](https://mobaxterm.mobatek.net/) - Enhanced terminal for Windows with X11 server, tabbed SSH client, network tools and much more
 * 2018/06/30 [Linux Graphical Applications on Windows](https://ariya.io/2018/06/linux-graphical-applications-on-windows)
 * 2018/01/30 [Hands-On with WSL: Running Graphical Apps](https://virtualizationreview.com/articles/2018/01/30/hands-on-with-wsl-graphical-apps.aspx)
 		- Xming, Cygwin X and vcXsrv
