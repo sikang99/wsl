@@ -39,7 +39,9 @@ Setting Linux Environment for Windows 10
 
 - 2018/07/09
   [Installed yarn package](https://yarnpkg.com/lang/en/docs/install/#debian-stable): 1.7.0
-  [Installed node-wasm](https://www.npmjs.com/package/node-wasm) package
+  and [node-wasm](https://www.npmjs.com/package/node-wasm) package
+    [yusinto/node-wasm](https://github.com/yusinto/node-wasm/:w
+    )
 
 - 2018/07/07: 
    Installed some packages for Linux
