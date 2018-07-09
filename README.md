@@ -30,6 +30,10 @@ Setting Linux Environment for Windows 10
 * 2017/05/07 [Setting Up Docker for Windows and WSL to Work Flawlessly](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
 
 
+### Utilities for Windows
+* [MSYS2](https://www.msys2.org/)
+* [Cygwin](https://www.cygwin.com/)
+
 ### Open Source
 * [Microsoft/WSL](https://github.com/Microsoft/WSL) - Issues found on WSL
 * [kpocza/LoWe](https://github.com/kpocza/LoWe) - Linux on Windows extender
