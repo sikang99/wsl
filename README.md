@@ -5,6 +5,7 @@ Setting Linux Environment for Windows 10
 * [Windows Subsystem for Linux Documentation](https://docs.microsoft.com/ko-kr/windows/wsl/about)
 * [Setting up Ubuntu (WSL) for Linux GUI Apps](http://token2shell.com/howto/x410/setting-up-wsl-for-linux-gui-apps/)
 * [Updating WSL](http://wsl-guide.org/en/latest/update.html)
+* 2018/06/11 [Why You Should Use Windows Subsystem for Linux](https://virtualizationreview.com/articles/2018/06/11/why-you-should-use-windows-subsystem-for-linux.aspx)
 * 2018/06/16 [Linux on Windows 10 (WSL)](https://www.eshlomo.us/linux-on-windows-10-wsl-intro/)
 * 2018/01/10 [Windows10에서 Linux 개발환경 구축](http://crynut84.github.io/2018/01/10/building-dev-env-using-wsl/)
 * 2017/10/20 [WSL(Windows Subsystem for Linux) 사용기 및 ArchLinux로의 전환](https://tech.ssut.me/2017/10/20/install-archlinux-on-windows-subsystem-for-linux/)
