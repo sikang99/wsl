@@ -176,6 +176,7 @@ alias chrome='chromium-browser&'
 alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 alias image='eog'
 alias gterm='gnome-terminal &'
+alias wcode='/mnt/c/Program\ Files/Microsoft\ VS\ Code/Code.exe'
 
 
 . /usr/share/autojump/autojump.sh
