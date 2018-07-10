@@ -49,7 +49,7 @@ Setting Linux Environment for Windows 10
 
 ### History
 - 2018/07/10
-  Unstable WSL to start VSCode
+  When you see the message "already VSCode is running", restart your windows 10
 ```
 $ sudo apt update
 $ sudo apt install code
@@ -58,6 +58,7 @@ $ sudo service dbus start
 ```
 ```
 $ sudo apt install p7zip
+$ 7za x <filename.zip>
 ```
 
 - 2018/07/09
