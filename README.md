@@ -17,6 +17,7 @@ Setting Linux Environment for Windows 10
 * [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/) : Free
 * [X410](http://token2shell.com/x410/) : Paid
 * [MobaXterm](https://mobaxterm.mobatek.net/) - Enhanced terminal for Windows with X11 server, tabbed SSH client, network tools and much more
+* [wsltty](https://github.com/mintty/wsltty/releases/tag/1.9.0.2)
 * 2018/06/30 [Linux Graphical Applications on Windows](https://ariya.io/2018/06/linux-graphical-applications-on-windows)
 * 2018/01/30 [Hands-On with WSL: Running Graphical Apps](https://virtualizationreview.com/articles/2018/01/30/hands-on-with-wsl-graphical-apps.aspx)
 		- Xming, Cygwin X and vcXsrv
@@ -34,11 +35,14 @@ Setting Linux Environment for Windows 10
 * [MSYS2](https://www.msys2.org/)
 * [Cygwin](https://www.cygwin.com/)
 
+
 ### Open Source : [Github](https://github.com)
 * [Microsoft/WSL](https://github.com/Microsoft/WSL) - Issues found on WSL
 * [kpocza/LoWe](https://github.com/kpocza/LoWe) - Linux on Windows extender
 * [paradoxxxzero/butterfly](https://github.com/paradoxxxzero/butterfly) - A web terminal based on websocket and tornado
 * [powerline/fonts](https://github.com/powerline/fonts) - Patched fonts for Powerline users
+* [mintty/wsltty](https://github.com/mintty/wsltty) - Mintty as a terminal for Bash on Ubuntu on Windows/WSL
+
 
 ### History
 
