@@ -45,6 +45,7 @@ Setting Linux Environment for Windows 10
 
 
 ### History
+- 2018/07/10
 
 - 2018/07/09
   [Installed yarn package](https://yarnpkg.com/lang/en/docs/install/#debian-stable): 1.7.0
