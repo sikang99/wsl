@@ -68,3 +68,6 @@ set-display sd:
 set-docker sk:
 	export DOCKER_HOST='tcp://0.0.0.0:2375'
 
+clean-git cg:
+	rm -f /home/stoney/.git/index.lock
+

@@ -177,6 +177,7 @@ alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 alias image='eog'
 alias gterm='gnome-terminal &'
 alias wcode='/mnt/c/Program\ Files/Microsoft\ VS\ Code/Code.exe'
+alias xsrv='/mnt/c/Program\ Files/VcXsrv/vcxsrv.exe :0 -ac -terminate -lesspointer -multiwindow -clipboard -wgl -dpi auto'
 
 
 . /usr/share/autojump/autojump.sh
@@ -192,4 +193,6 @@ export DOCKER_HOST='tcp://0.0.0.0:2375'
 # Set user environment
 export DOWNLOAD=/mnt/c/Users/201711101/Downloads
 export WINHOME=/mnt/c/Users/201711101/AppData/Local/lxss
+
+set bell-style none
 
