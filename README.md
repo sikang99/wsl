@@ -56,6 +56,9 @@ $ sudo apt install code
 $ sudo apt install code-insiders
 $ sudo service dbus start
 ```
+```
+$ sudo apt install p7zip
+```
 
 - 2018/07/09
   [Installed yarn package](https://yarnpkg.com/lang/en/docs/install/#debian-stable): 1.7.0
