@@ -1,0 +1,41 @@
+#
+# Makefile by stoney
+# for rust development
+#
+all: usage
+
+usage:
+	@echo ""
+	@echo "usage: make [edit|info|build|run|clean]"
+	@echo ""
+
+edit e:
+	@echo ""
+	@echo "make (edit) [make|rust|cargo]"
+	@echo ""
+
+edit-make em:
+	vi Makefile
+
+edit-rust er:
+	vi src/main.rs
+
+edit-cargo ec:
+	vi Cargo.toml
+
+new n:
+	cargo new --bin stime
+
+info i:
+	cat Cargo.toml
+
+build b:
+	cargo build
+
+run r:
+	cargo run
+
+clean c:
+	cargo clean
+	tree
+
