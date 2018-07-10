@@ -42,7 +42,7 @@ run-copy rc:
 
 run-git rg:
 	git add README.md Makefile Makefile.* .bashrc .vimrc doc/
-	git commit -m "Makefile templates"
+	git commit -m "add some stuff"
 	git push -u origin master
 
 set s:
