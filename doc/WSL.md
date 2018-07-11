@@ -7,16 +7,20 @@ Setting Linux Environment for Windows 10
 * [Updating WSL](http://wsl-guide.org/en/latest/update.html)
 * 2018/06/11 [Why You Should Use Windows Subsystem for Linux](https://virtualizationreview.com/articles/2018/06/11/why-you-should-use-windows-subsystem-for-linux.aspx)
 * 2018/06/16 [Linux on Windows 10 (WSL)](https://www.eshlomo.us/linux-on-windows-10-wsl-intro/)
+* 2018/05/13 [Building Linux Workspace on Windows 10 via WSL](http://xcorpion.tech/2018/05/13/Building-Linux-Workspace-on-Windows-10-via-WSL/)
 * 2018/01/10 [Windows10에서 Linux 개발환경 구축](http://crynut84.github.io/2018/01/10/building-dev-env-using-wsl/)
 * 2017/10/20 [WSL(Windows Subsystem for Linux) 사용기 및 ArchLinux로의 전환](https://tech.ssut.me/2017/10/20/install-archlinux-on-windows-subsystem-for-linux/)
 * 2017/10/12 [Windows 10에서 리눅스용 프로그램 설치하고 실행하기](https://medium.com/@rkttu/windows-10%EC%97%90%EC%84%9C-%EB%A6%AC%EB%88%85%EC%8A%A4%EC%9A%A9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B3%A0-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0-2cb0d7892d12)
 * [Fedora Environment on Windows Subsystem for Linux](https://www.variantweb.net/pub/fedora-wsl.pdf)
+* 2017/09/29 [Configuring a pretty and usable terminal emulator for WSL](https://blog.ropnop.com/configuring-a-pretty-and-usable-terminal-emulator-for-wsl/)
+
 
 ### X-Window Server for Windows
 * [Chocolatey](https://chocolatey.org/) - The package manager for Windows
 * [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/) : Free
 * [X410](http://token2shell.com/x410/) : Paid
 * [MobaXterm](https://mobaxterm.mobatek.net/) - Enhanced terminal for Windows with X11 server, tabbed SSH client, network tools and much more
+* [wsltty](https://github.com/mintty/wsltty/releases) : 1.9.0.2
 * 2018/06/30 [Linux Graphical Applications on Windows](https://ariya.io/2018/06/linux-graphical-applications-on-windows)
 * 2018/01/30 [Hands-On with WSL: Running Graphical Apps](https://virtualizationreview.com/articles/2018/01/30/hands-on-with-wsl-graphical-apps.aspx)
 		- Xming, Cygwin X and vcXsrv
@@ -34,13 +38,28 @@ Setting Linux Environment for Windows 10
 * [MSYS2](https://www.msys2.org/)
 * [Cygwin](https://www.cygwin.com/)
 
+
 ### Open Source : [Github](https://github.com)
 * [Microsoft/WSL](https://github.com/Microsoft/WSL) - Issues found on WSL
 * [kpocza/LoWe](https://github.com/kpocza/LoWe) - Linux on Windows extender
 * [paradoxxxzero/butterfly](https://github.com/paradoxxxzero/butterfly) - A web terminal based on websocket and tornado
 * [powerline/fonts](https://github.com/powerline/fonts) - Patched fonts for Powerline users
+* [mintty/wsltty](https://github.com/mintty/wsltty) - Mintty as a terminal for Bash on Ubuntu on Windows/WSL
+
 
 ### History
+- 2018/07/10
+  When you see the message "already VSCode is running", restart your windows 10
+```
+$ sudo apt update
+$ sudo apt install code
+$ sudo apt install code-insiders
+$ sudo service dbus start
+```
+```
+$ sudo apt install p7zip
+$ 7za x <filename.zip>
+```
 
 - 2018/07/09
   [Installed yarn package](https://yarnpkg.com/lang/en/docs/install/#debian-stable): 1.7.0

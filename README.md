@@ -48,8 +48,20 @@ Setting Linux Environment for Windows 10
 
 
 ### History
-- 2018/07/10
-  When you see the message "already VSCode is running", restart your windows 10
+
+- 2018/07/11:
+  To upgrade node to the latest version, 
+```
+$ sudo npm install -g n
+$ sudo n latest
+```
+or
+```
+$ sudo n 10.6.0
+```
+
+- 2018/07/10:
+  When you see the message "Another Instance of Code ...", restart your windows 10
 ```
 $ sudo apt update
 $ sudo apt install code
