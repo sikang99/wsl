@@ -55,6 +55,7 @@ Setting Linux Environment for Windows 10
 $ sudo npm install -g n
 $ sudo n latest or $ sudo n 10.6.0
 ```
+   If the above method is failed, do this.
 ```
 $ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
