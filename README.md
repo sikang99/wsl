@@ -53,11 +53,7 @@ Setting Linux Environment for Windows 10
   To upgrade node to the latest version, 
 ```
 $ sudo npm install -g n
-$ sudo n latest
-```
-or
-```
-$ sudo n 10.6.0
+$ sudo n latest or $ sudo n 10.6.0
 ```
 
 - 2018/07/10:
