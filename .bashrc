@@ -173,7 +173,7 @@ alias vimrc='vim $HOME/.vimrc'
 alias cls='clear'
 alias d='clear && ls -cF'
 alias chrome='chromium-browser&'
-alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove'
+alias update='sudo apt update && sudo apt -y upgrade && sudo apt autoremove'
 alias image='eog'
 alias gterm='gnome-terminal &'
 alias wcode='/mnt/c/Program\ Files/Microsoft\ VS\ Code/Code.exe'
@@ -182,10 +182,11 @@ alias xsrv='/mnt/c/Program\ Files/VcXsrv/vcxsrv.exe :0 -ac -terminate -lesspoint
 . /usr/share/autojump/autojump.sh
 
 if [ -d "$HOME/coding/cpp/src/emsdk/" ]; then
+	echo "EMSDK setting ..."
 	#. $HOME/coding/cpp/src/emsdk/emsdk_env.sh
 	export EMSDK=/home/stoney/coding/cpp/src/emsdk
 	export PATH=$PATH:$EMSDK/clang/fastcomp/build_incoming_64/bin
-	export PATH=$PATH:$EMSDK/node/8.9.1_64bit/bin
+	#export PATH=$PATH:$EMSDK/node/8.9.1_64bit/bin
 	export PATH=$PATH:$EMSDK/emscripten/incoming
 	export PATH=$PATH:$EMSDK/binaryen/master_64bit_binaryen/bin
 fi

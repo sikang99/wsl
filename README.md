@@ -45,6 +45,7 @@ Setting Linux Environment for Windows 10
 * [paradoxxxzero/butterfly](https://github.com/paradoxxxzero/butterfly) - A web terminal based on websocket and tornado
 * [powerline/fonts](https://github.com/powerline/fonts) - Patched fonts for Powerline users
 * [mintty/wsltty](https://github.com/mintty/wsltty) - Mintty as a terminal for Bash on Ubuntu on Windows/WSL
+* [ethanhs/WSL-Programs](https://github.com/ethanhs/WSL-Programs) - A community powered list of programs that work (and those that don't) on the Windows subsystem for Linux
 
 
 ### History
@@ -68,7 +69,7 @@ $ sudo npm i -g npm
 ```
 $ sudo apt update
 $ sudo apt install code
-$ sudo apt install code-insiders
+$ sudo apt install code-insiders	# developer version
 $ sudo service dbus start
 ```
 ```
