@@ -179,9 +179,16 @@ alias gterm='gnome-terminal &'
 alias wcode='/mnt/c/Program\ Files/Microsoft\ VS\ Code/Code.exe'
 alias xsrv='/mnt/c/Program\ Files/VcXsrv/vcxsrv.exe :0 -ac -terminate -lesspointer -multiwindow -clipboard -wgl -dpi auto'
 
-
 . /usr/share/autojump/autojump.sh
-. $HOME/coding/cpp/src/emsdk/emsdk_env.sh
+
+if [ -d "$HOME/coding/cpp/src/emsdk/" ]; then
+	#. $HOME/coding/cpp/src/emsdk/emsdk_env.sh
+	export EMSDK=/home/stoney/coding/cpp/src/emsdk
+	export PATH=$PATH:$EMSDK/clang/fastcomp/build_incoming_64/bin
+	export PATH=$PATH:$EMSDK/node/8.9.1_64bit/bin
+	export PATH=$PATH:$EMSDK/emscripten/incoming
+	export PATH=$PATH:$EMSDK/binaryen/master_64bit_binaryen/bin
+fi
 
 # Set X-Window/docker environment variables
 export DISPLAY='127.0.0.1:0.0'

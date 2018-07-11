@@ -55,6 +55,12 @@ Setting Linux Environment for Windows 10
 $ sudo npm install -g n
 $ sudo n latest or $ sudo n 10.6.0
 ```
+```
+$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+$ sudo apt update && sudo apt upgrade
+$ sudo npm i -g npm
+```
 
 - 2018/07/10:
   When you see the message "Another Instance of Code ...", restart your windows 10
