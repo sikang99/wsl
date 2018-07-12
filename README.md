@@ -49,7 +49,7 @@ Setting Linux Environment for Windows 10
 
 
 ### History
--2018/07/12
+-2018/07/12:
   Install some packages before compiling Tensorflow
 ```
 $ sudo apt install python-numpy python-dev python-pip python-wheel
