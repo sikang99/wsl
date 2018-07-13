@@ -59,6 +59,8 @@ $ sudo apt install swig
 For golang, just do the following, it is simply to use and test.  
    [Installing TensorFlow for Go](https://www.tensorflow.org/install/install_go)  
    [Understanding Tensorflow using Go](https://pgaleone.eu/tensorflow/go/2017/05/29/understanding-tensorflow-using-go/)  
+Now, Tensorflow 1.9.0 is installed without GPU support.  
+
 - 2018/07/11:
   To upgrade node to the latest version, 
 ```
