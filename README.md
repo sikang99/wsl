@@ -49,6 +49,14 @@ Setting Linux Environment for Windows 10
 
 
 ### History
+- 2018/07/13: 
+   Encounter the problem of not executing the docker image of tensorflow/serving without a notary service
+```
+export DOCKER_HOST='tcp://0.0.0.0:2375'
+export DOCKER_CONTENT_TRUST=1
+export DOCKER_CONTENT_TRUST_SERVER=https://notary.docker.io
+```
+
 - 2018/07/13:
    If you use lshw command to check the hardware status on WSL, no information will appear.
 ```
