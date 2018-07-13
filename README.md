@@ -50,7 +50,7 @@ Setting Linux Environment for Windows 10
 
 ### History
 - 2018/07/13:
-   To check the hardware status on WSL
+   If you use lshw command to check the hardware status on WSL, no information will appear.
 ```
 $ sudo lshw -C display | grep product
 ```
