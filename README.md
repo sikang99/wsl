@@ -49,6 +49,12 @@ Setting Linux Environment for Windows 10
 
 
 ### History
+- 2018/07/13:
+   To check the hardware status on WSL
+```
+$ sudo lshw -C display | grep product
+```
+
 - 2018/07/12:
   Install some packages before compiling Tensorflow
 ```
