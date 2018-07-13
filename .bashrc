@@ -195,7 +195,7 @@ fi
 export DISPLAY='127.0.0.1:0.0'
 export LIBGL_ALWAYS_INDIRECT=1
 export DOCKER_HOST='tcp://0.0.0.0:2375'
-export DOCKER_CONTENT_TRUST=1
+export DOCKER_CONTENT_TRUST=0
 export DOCKER_CONTENT_TRUST_SERVER=https://notary.docker.io
 #export DOCKER_CERT_PATH=/mnt/c/Users/201711101/.docker/machine/certs
 #export DOCKER_TLS_VERIFY=1

@@ -49,6 +49,17 @@ Setting Linux Environment for Windows 10
 
 
 ### History
+- 2018/07/13:
+   To replace old docker.io package to the new docker-ce,
+```
+sudo mv /var/lib/dpkg/info/docker.* /tmp/
+sudo dpkg --remove --force-remove-reinstreq docker.io
+sudo apt-get remove docker.io
+sudo apt-get autoremove && sudo apt-get autoclean
+
+closed and reopened bash (WSL)
+sudo apt-get install docker-ce
+```
 - 2018/07/13: 
    Encounter the problem of not executing the docker image of tensorflow/serving without a notary service
 ```
