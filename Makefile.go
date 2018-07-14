@@ -20,7 +20,7 @@ edit-make em:
 edit-readme er:
 	vi README.md
 
-build b:
+build b: $(PGM).go
 	go build -o $(PGM) $(PGM).go
 
 run r:

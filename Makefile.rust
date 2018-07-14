@@ -1,33 +1,30 @@
-#
+# 
 # Makefile by stoney
-# for rust development
+# for Rust programming
 #
 all: usage
 
 usage:
 	@echo ""
-	@echo "usage: make [edit|info|build|run|clean]"
+	@echo "make [edit|new|build|run]"
 	@echo ""
+
+PGM=hello
 
 edit e:
-	@echo ""
-	@echo "make (edit) [make|rust|cargo]"
-	@echo ""
-
-edit-make em:
-	vi Makefile
-
-edit-rust er:
 	vi src/main.rs
 
 edit-cargo ec:
 	vi Cargo.toml
 
-new n:
-	cargo new --bin stime
+edit-make em:
+	vi Makefile
 
-info i:
-	cat Cargo.toml
+edit-readme er:
+	vi README.md
+
+new n:
+	cargo new --bin $(PGM)
 
 build b:
 	cargo build
@@ -37,5 +34,9 @@ run r:
 
 clean c:
 	cargo clean
-	tree
+
+version v:
+	@cargo --version
+	@rustc --version
+	@rustdoc --version
 
