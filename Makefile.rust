@@ -24,7 +24,11 @@ edit-readme er:
 	vi README.md
 
 new n:
-	cargo new --bin $(PGM)
+	@if [ ! -d "./src" ]; then \
+		cargo new --bin $(PGM); \
+	else \
+		echo "Already created."; \
+	fi
 
 build b:
 	cargo build
@@ -32,7 +36,7 @@ build b:
 run r:
 	cargo run
 
-clean c:
+clean:
 	cargo clean
 
 version v:
