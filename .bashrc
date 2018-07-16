@@ -205,4 +205,5 @@ export DOWNLOAD=/mnt/c/Users/201711101/Downloads
 export WINHOME=/mnt/c/Users/201711101/AppData/Local/lxss
 
 set bell-style none
+umask 0022
 
