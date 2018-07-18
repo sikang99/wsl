@@ -1,0 +1,68 @@
+#
+# Makefile by Stoney.Kang, sikang99@gmail.com
+#	 for building wasm application
+#
+.PHONY: all usage
+all: usage
+
+usage:
+	@echo ""
+	@echo "usage: make [edit|build|test|run|view|kill]"
+	@echo ""
+
+edit e:
+	@echo ""
+	@echo "make (edit) [cargo|node|webpack|make|readme]"
+	@echo ""
+
+edit-node en:
+	vi package.json
+
+edit-webpack ew:
+	vi webpack.config.js
+
+edit-cargo ec:
+	vi Cargo.toml
+
+edit-readme er:
+	vi README.md
+
+edit-make em:
+	vi Makefile
+
+build b:
+	@echo ""
+	@echo "make (build) [start|lib|wasm]"
+	@echo ""
+
+build-start bs:
+	npm install --production
+	npm start
+
+build-lib bl:
+	npm install
+	npm run build-js
+
+build-wasm bw:
+	npm run build-wasm
+
+test t:
+	-npm test	# call cargo test
+	#-cargo test
+
+clean:
+	cargo clean
+
+run r:
+	npm start &
+
+kill k:
+	killall npm node
+
+BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
+view v:
+	$(BROWSER) http://localhost:4000
+
+backup:
+	cp Makefile ~/makefiles/Makefile.wasm
+

@@ -40,3 +40,7 @@ CHDIR=cd nebulet/ &&
 
 clobber:
 	rm -rf nebulet
+
+backup:
+	cp Makefile ~/makefiles/Makefile.nebulet
+
