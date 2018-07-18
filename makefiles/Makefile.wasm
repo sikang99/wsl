@@ -30,6 +30,19 @@ edit-readme er:
 edit-make em:
 	vi Makefile
 
+install i:
+	@echo ""
+	@echo "make (install) [nightly|tools]"
+	@echo ""
+
+install-nightly in:
+	rustup install nightly
+	rustup update nightly
+	rustup target add wasm32-unknown-unknown --toolchain nightly
+
+install-tools it:
+	cargo install wasm-bindgen-cli twiggy wasm-pack
+
 build b:
 	@echo ""
 	@echo "make (build) [start|lib|wasm]"
@@ -53,6 +66,9 @@ test t:
 clean:
 	cargo clean
 
+list:
+	cargo install --list
+
 run r:
 	npm start &
 
@@ -60,6 +76,7 @@ kill k:
 	killall npm node
 
 BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
+#BROWSER=firefox
 view v:
 	$(BROWSER) http://localhost:4000
 
