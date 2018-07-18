@@ -41,8 +41,8 @@ run-copy rc:
 	cp $(DOWNLOAD)/WAVE/* doc/WAVE/
 
 run-git rg:
-	git add README.md Makefile Makefile.* .bashrc .vimrc doc/ install/
-	git commit -m "add some stuff including install scripts"
+	git add README.md Makefile .bashrc .vimrc doc/ install/ makefiles/
+	git commit -m "add some stuff including makefiles"
 	git push -u origin master
 
 set s:

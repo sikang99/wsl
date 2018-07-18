@@ -122,26 +122,27 @@ PATH="/bin:/usr/bin:/usr/local/bin:$HOME/.local/bin"
 
 # set Rust language dev environment
 if [ -d "$HOME/.cargo" ]; then
-	echo "Rust setting ..."
+	export CARGO_HOME=$HOME/.cargo
 	export RSPATH=$HOME/.cargo
 	export PATH=$PATH:$RSPATH/bin
+	echo "Rust setting in $CARGO_HOME ..."
 fi
 
 # set Golang dev environment
 if [ -d "$HOME/coding/go" ]; then
-	echo "Go setting ..."
 	export GOPATH=$HOME/coding/go
 	#export GOROOT=$GOPATH/root/gowasm
-	export GOROOT=$GOPATH/root/go1.10.3
-	#export GOROOT=$GOPATH/root/go1.11beta1
+	#export GOROOT=$GOPATH/root/go1.10.3
+	export GOROOT=$GOPATH/root/go1.11beta1
 	export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+	echo "Go setting in $GOPATH, $GOROOT ..."
 fi
 
 # set C++ language dev environment
 if [ -d "$HOME/coding/cpp" ]; then
-	echo "C++ setting ..."
 	export CPPPATH=$HOME/coding/cpp
 	export PATH=$PATH:$CPPPATH/bin
+	echo "C++ setting ..."
 fi
 
 # set C language dev environment
@@ -182,13 +183,13 @@ alias xsrv='/mnt/c/Program\ Files/VcXsrv/vcxsrv.exe :0 -ac -terminate -lesspoint
 . /usr/share/autojump/autojump.sh
 
 if [ -d "$HOME/coding/cpp/src/emsdk/" ]; then
-	echo "EMSDK setting ..."
 	#. $HOME/coding/cpp/src/emsdk/emsdk_env.sh
 	export EMSDK=/home/stoney/coding/cpp/src/emsdk
 	export PATH=$PATH:$EMSDK/clang/fastcomp/build_incoming_64/bin
 	#export PATH=$PATH:$EMSDK/node/8.9.1_64bit/bin
 	export PATH=$PATH:$EMSDK/emscripten/incoming
 	export PATH=$PATH:$EMSDK/binaryen/master_64bit_binaryen/bin
+	echo "EMSDK setting in $EMSDK ..."
 fi
 
 # Set X-Window/docker environment variables

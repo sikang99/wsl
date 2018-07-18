@@ -1,0 +1,30 @@
+#
+# Makefile by stoney, sikang99@gmail.com
+#
+all: usage
+
+usage:
+	@echo ""
+	@echo "usage: make [edit|build|run]"
+	@echo ""
+
+PGM=test
+
+install-package pk:
+	sudo -H pip install numpy scipy matplotlib
+	sudo -H pip install pillow lxml jupyter protobuf
+	sudo -H pip install tensorflow keras
+	#sudo pip -H install tensorflow-gpu
+
+edit-make em:
+	vi Makefile
+
+edit e:
+	vi $(PGM).py
+
+run r:
+	python $(PGM).py
+
+web w:
+	python2 -m SimpleHTTPServer 9000
+	#python3 -m http.server 9000

@@ -1,0 +1,42 @@
+#
+# Makefile by Stoney (sikang99@gmail.com)
+# 	for building netbulet
+#
+.PHONY: all
+all:
+	@echo ""
+	@echo "usage: make [1|2|3|4|5|clobber]"
+	@echo ""
+
+edit-make em:
+	vi Makefile
+
+CHDIR=cd nebulet/ &&
+
+# download the source
+1 download:
+	git clone https://github.com/nebulet/nebulet.git
+
+# install tools and make sure that `python` is accessible.
+2 install:
+	-$(CHDIR) rustup override set nightly
+	-$(CHDIR) rustup component add rust-src
+	-$(CHDIR) rustup target add wasm32-unknown-unknown
+	-$(CHDIR) cargo install cargo-xbuild
+	-$(CHDIR) cargo install --git https://github.com/nebulet/bootimage --branch packaging
+
+3 build:
+	# build userspace
+	$(CHDIR) cargo userspace
+
+
+# compile the kernel
+4 compile:
+	$(CHDIR) bootimage build --release
+
+# compile and run the kernel in qemu
+5 run:
+	$(CHDIR) bootimage run --release -- -serial stdio
+
+clobber:
+	rm -rf nebulet

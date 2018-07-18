@@ -1,0 +1,67 @@
+#
+# Makefile for rust by stoney
+#
+.PHONEY: all usage
+all: usage
+
+usage: 
+	@echo ""
+	@echo "usage: make [e:dit|i:nstall]"
+	@echo ""
+
+PGM=hello_world
+#----------------------------------------------------------
+edit e:
+	@echo ""
+	@echo "make edit [r:eadme|m:ake]"
+	@echo ""
+
+edit-cargo ec:
+	vi Cargo.toml
+
+edit-readme er:
+	vim README.md
+
+edit-make em:
+	vim Makefile
+
+#----------------------------------------------------------
+install i:
+	@echo ""
+	@echo "make install [stable|nightly|version]"
+	@echo ""
+
+install-stable is:
+	curl https://sh.rustup.rs -sSf | sh
+
+install-nighly in:
+	rustup default nightly
+	rustup target add wasm32-unknown-unknown --toolchain nightly
+	cargo install wasm-gc
+
+install-version iv:
+	@cat /etc/lsb-release
+	@cargo --version
+	@rustc --version
+	@rustdoc --version
+#----------------------------------------------------------
+run r:
+	@echo ""
+	@echo "make run [http]"
+	@echo ""
+
+run-http rh:
+	python3 -m http.server
+
+#----------------------------------------------------------
+new:
+	@if [ ! -d "./src" ]; then \
+		cargo new $(PGM) --bin; \
+	else \
+		echo "Already created."; \
+	fi
+
+clean:
+	cargo clean
+
+
