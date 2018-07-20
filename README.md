@@ -49,6 +49,12 @@ Setting Linux Environment for Windows 10
 
 
 ### History
+- 2018/07/20:
+   To download the web path without upper paths
+```
+$ wget -r --no-parent http://www.itec.aau.at/ftp/datasets
+```
+
 - 2018/07/13:
    To replace old docker.io package to the new docker-ce,
 ```

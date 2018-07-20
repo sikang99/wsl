@@ -67,6 +67,8 @@ composed by Stoney Kang, sikang99@gmail.com
 - [ABR Low Latency at IBC 2017: A Performance in Four Acts](https://www.cisco.com/c/m/en_us/network-intelligence/service-provider/digital-transformation/reducing-abr-latency.html)
 		- Video Aware Networking
 - 2017/10/23 [Demystifying HTML5 Video Player](https://medium.com/@eyevinntechnology/demystifying-html5-video-player-e480846328f0)
+- [Multi-Codec DASH Dataset](https://arxiv.org/pdf/1803.06874.pdf)
+
 
 
 ### W3C
