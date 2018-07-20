@@ -8,6 +8,7 @@ composed by Stoney Kang, sikang99@gmail.com
 		- 30% improvement over VP9 & HEVC
 - 2018/05/01 [MPEG 122 Meeting Report](https://bitmovin.com/mpeg-122-meeting-report/)
 		- Versatile Video Coding (VVC)
+- 2018/07/18 [AV1 Codec ISO Media File Format Binding](https://aomediacodec.github.io/av1-isobmff/)
 
 #### [Wowza](https://www.wowza.com)
 
