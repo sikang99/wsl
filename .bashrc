@@ -131,9 +131,9 @@ fi
 # set Golang dev environment
 if [ -d "$HOME/coding/go" ]; then
 	export GOPATH=$HOME/coding/go
-	#export GOROOT=$GOPATH/root/gowasm
+	export GOROOT=$GOPATH/root/gowasm
 	#export GOROOT=$GOPATH/root/go1.10.3
-	export GOROOT=$GOPATH/root/go1.11beta1
+	#export GOROOT=$GOPATH/root/go1.11beta1
 	export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 	echo "Go setting in $GOPATH, $GOROOT ..."
 fi
@@ -207,4 +207,6 @@ export WINHOME=/mnt/c/Users/201711101/AppData/Local/lxss
 
 set bell-style none
 umask 0022
+
+source ~/.alacritty
 

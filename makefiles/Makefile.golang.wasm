@@ -1,0 +1,42 @@
+#
+# Makefile by Stoney
+#
+all: usage
+
+usage:
+	@echo ""
+	@echo "usage: make [edit|build|run]"
+	@echo ""
+
+edit e:
+	vi main.go
+
+edit-html eh:
+	vi index.html
+
+edit-js ej:
+	vi wasm_exec.js
+
+edit-caddy ec:
+	vi Caddyfile
+
+edit-make em:
+	vi Makefile
+
+build-go bg:
+	GOOS=js GOARCH=wasm go build $(PGM).go -o $(PGM).wasm
+	#gopherjs build -o main.js ./main.go
+
+run-server rs:
+	caddy &
+
+BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
+run-client rc:
+	$(BROWSER) http://localhost:8080
+
+kill k:
+	killall caddy
+
+backup bak:
+	cp Makefile ~/makefiles/Makefile.golang.wasm
+

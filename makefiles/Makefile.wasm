@@ -32,16 +32,33 @@ edit-make em:
 
 install i:
 	@echo ""
-	@echo "make (install) [nightly|tools]"
+	@echo "make (install) [rust|stable|nightly|tools]"
 	@echo ""
 
-install-nightly in:
+install-rust ir:
+	#curl -sf -L https://static.rust-lang.org/rustup.sh | sh
+	curl https://sh.rustup.rs -sSf | sh
 	rustup install nightly
+
+install-stable is:
+	rustup override set stable
+	rustup update stable
+
+install-nightly in:
+	rustup override set nightly
 	rustup update nightly
 	rustup target add wasm32-unknown-unknown --toolchain nightly
 
 install-tools it:
-	cargo install wasm-bindgen-cli twiggy wasm-pack
+	cargo install wasm-gc wasm-nm parity-wasm wasmparser wasmtext wasm-bindgen-cli wasm-pack twiggy
+
+version-check vc:
+	@rustup --version
+	@rustc --version
+	@cargo --version
+
+version-update vu:
+	rustup self update
 
 build b:
 	@echo ""
@@ -80,6 +97,6 @@ BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
 view v:
 	$(BROWSER) http://localhost:4000
 
-backup:
+backup bak:
 	cp Makefile ~/makefiles/Makefile.wasm
 
