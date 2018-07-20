@@ -4,11 +4,14 @@ composed by Stoney Kang, sikang99@gmail.com
 ### Organization
 #### [Bitmovin](https://bitmovin.com/)
 - [SlideShare](https://www.slideshare.net/bitmovin)
-- [AV1](https://bitmovin.com/av1/)
+- [Alliance for Open Media](https://aomedia.org/)   
+		- [AV1](https://bitmovin.com/av1/)  
 		- 30% improvement over VP9 & HEVC
 - 2018/05/01 [MPEG 122 Meeting Report](https://bitmovin.com/mpeg-122-meeting-report/)
 		- Versatile Video Coding (VVC)
 - 2018/07/18 [AV1 Codec ISO Media File Format Binding](https://aomediacodec.github.io/av1-isobmff/)
+- 2018/06/26 [AV1 Bitstream & Decoding Process Specification](https://aomediacodec.github.io/av1-spec/)
+
 
 #### [Wowza](https://www.wowza.com)
 
