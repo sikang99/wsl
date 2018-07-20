@@ -9,8 +9,6 @@ composed by Stoney Kang, sikang99@gmail.com
 		- 30% improvement over VP9 & HEVC
 - 2018/05/01 [MPEG 122 Meeting Report](https://bitmovin.com/mpeg-122-meeting-report/)
 		- Versatile Video Coding (VVC)
-- 2018/07/18 [AV1 Codec ISO Media File Format Binding](https://aomediacodec.github.io/av1-isobmff/)
-- 2018/06/26 [AV1 Bitstream & Decoding Process Specification](https://aomediacodec.github.io/av1-spec/)
 
 
 #### [Wowza](https://www.wowza.com)
@@ -32,8 +30,12 @@ composed by Stoney Kang, sikang99@gmail.com
 
 
 ### AOMedia AV1 Codec
+- 2018/07/18 [AV1 Codec ISO Media File Format Binding](https://aomediacodec.github.io/av1-isobmff/)
+- 2018/06/26 [AV1 Bitstream & Decoding Process Specification](https://aomediacodec.github.io/av1-spec/)
 - 2018/06/28 [HEVC Is Flowing Into AVC Workflows: Survey Report](http://www.streamingmedia.com/Articles/Editorial/Featured-Articles/HEVC-Is-Flowing-Into-AVC-Workflows-Survey-Report-125993.aspx)
+- 2018/01/05 [Nwgat's AOMedia's AV1 Codec Overview](https://nwgat.ninja/test-driving-aomedias-av1-codec/)
 - [AV1.js](http://libwebpjs.hohenlimburg.org/av1/)
+- [AV1 & Media Codecs](https://research.mozilla.org/av1-media-codecs/)
 
 
 ### WAVE (Web Application Video Ecosystem) Project 
