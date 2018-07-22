@@ -132,9 +132,9 @@ fi
 if [ -d "$HOME/coding/go" ]; then
 	export GOPATH=$HOME/coding/go
 	#export GOROOT=$GOPATH/root/gowasm
-	export GOROOT=$GOPATH/root/go1.11beta1
+	#export GOROOT=$GOPATH/root/go1.11beta1
 	#export GOROOT=$GOPATH/root/go1.11beta2
-	#export GOROOT=$GOPATH/root/go1.10.3
+	export GOROOT=$GOPATH/root/go1.10.3
 	export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 	echo "Go setting in $GOPATH, $GOROOT ..."
 fi
@@ -193,9 +193,9 @@ if [ -d "$HOME/coding/cpp/src/emsdk/" ]; then
 	echo "EMSDK setting in $EMSDK ..."
 fi
 
-if [ -d "/c" ]; then
+if [ "`findmnt /c`" == "" ]; then
 	sudo mount --bind /mnt/c /c
-	echo "sudo mount --bind /mnt/c /c"
+	echo "Mount /mnt/c to /c"
 fi
 
 # Set X-Window/docker environment variables

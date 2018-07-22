@@ -1,0 +1,102 @@
+#
+# Makefile by Stoney.Kang, sikang99@gmail.com
+#	 for building wasm application
+#
+.PHONY: all usage
+all: usage
+
+usage:
+	@echo ""
+	@echo "usage: make [edit|build|test|run|view|kill]"
+	@echo ""
+
+edit e:
+	@echo ""
+	@echo "make (edit) [cargo|node|webpack|make|readme]"
+	@echo ""
+
+edit-node en:
+	vi package.json
+
+edit-webpack ew:
+	vi webpack.config.js
+
+edit-cargo ec:
+	vi Cargo.toml
+
+edit-readme er:
+	vi README.md
+
+edit-make em:
+	vi Makefile
+
+install i:
+	@echo ""
+	@echo "make (install) [rust|stable|nightly|tools]"
+	@echo ""
+
+install-rust ir:
+	#curl -sf -L https://static.rust-lang.org/rustup.sh | sh
+	curl https://sh.rustup.rs -sSf | sh
+	rustup install nightly
+
+install-stable is:
+	rustup override set stable
+	rustup update stable
+
+install-nightly in:
+	rustup override set nightly
+	rustup update nightly
+	rustup target add wasm32-unknown-unknown --toolchain nightly
+
+install-tools it:
+	cargo install wasm-gc wasm-nm parity-wasm wasmparser wasmtext wasm-bindgen-cli wasm-pack twiggy
+
+version-check vc:
+	@rustup --version
+	@rustc --version
+	@cargo --version
+
+version-update vu:
+	rustup self update
+
+build b:
+	@echo ""
+	@echo "make (build) [start|lib|wasm]"
+	@echo ""
+
+build-start bs:
+	npm install --production
+	npm start
+
+build-lib bl:
+	npm install
+	npm run build-js
+
+build-wasm bw:
+	npm run build-wasm
+
+test t:
+	-npm test	# call cargo test
+	#-cargo test
+
+clean:
+	cargo clean
+
+list:
+	cargo install --list
+
+run r:
+	npm start &
+
+kill k:
+	killall npm node
+
+BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
+#BROWSER=firefox
+view v:
+	$(BROWSER) http://localhost:4000
+
+backup bak:
+	cp Makefile ~/makefiles/Makefile.wasm
+

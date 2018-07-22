@@ -46,7 +46,7 @@ install-nighly in:
 	#rustup target add wasm32-unknown-unknown --toolchain nightly
 
 install-wasm iw:
-	-cargo install wasm-bindgen-cli wasm-gc wasm-pack wasm-nm
+	-cargo install wasm-bindgen-cli wasm-gc wasm-pack wasm-nm parity-wasm wasmparser wasmtext twiggy
 	-cargo install --list
 
 install-version iv:

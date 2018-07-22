@@ -1,102 +1,68 @@
+# 
+# Makefile by stoney
+# 	- wasm development by c, rust, go
 #
-# Makefile by Stoney.Kang, sikang99@gmail.com
-#	 for building wasm application
-#
-.PHONY: all usage
 all: usage
 
 usage:
 	@echo ""
-	@echo "usage: make [edit|build|test|run|view|kill]"
+	@echo "usage: make [edit|build|run|version|clean]"
 	@echo ""
+
+PGM=hello
 
 edit e:
 	@echo ""
-	@echo "make (edit) [cargo|node|webpack|make|readme]"
+	@echo "make (edit) [c|rust|go]"
 	@echo ""
 
-edit-node en:
-	vi package.json
+edit-c ec:
+	vim $(PGM).c
 
-edit-webpack ew:
-	vi webpack.config.js
+edit-rust er:
+	vim $(PGM).rs
 
-edit-cargo ec:
-	vi Cargo.toml
-
-edit-readme er:
-	vi README.md
+edit-go eg:
+	vim $(PGM).go
 
 edit-make em:
-	vi Makefile
-
-install i:
-	@echo ""
-	@echo "make (install) [rust|stable|nightly|tools]"
-	@echo ""
-
-install-rust ir:
-	#curl -sf -L https://static.rust-lang.org/rustup.sh | sh
-	curl https://sh.rustup.rs -sSf | sh
-	rustup install nightly
-
-install-stable is:
-	rustup override set stable
-	rustup update stable
-
-install-nightly in:
-	rustup override set nightly
-	rustup update nightly
-	rustup target add wasm32-unknown-unknown --toolchain nightly
-
-install-tools it:
-	cargo install wasm-gc wasm-nm parity-wasm wasmparser wasmtext wasm-bindgen-cli wasm-pack twiggy
-
-version-check vc:
-	@rustup --version
-	@rustc --version
-	@cargo --version
-
-version-update vu:
-	rustup self update
+	vim Makefile
 
 build b:
 	@echo ""
-	@echo "make (build) [start|lib|wasm]"
+	@echo "make (build) [binary:bb|emcc:bc|rust:br|go:bg]"
 	@echo ""
 
-build-start bs:
-	npm install --production
-	npm start
+build-binary bb:
+	gcc -O3 $(PGM).c -o $(PGM)-c
+	rustc $(PGM).rs -o $(PGM)-rs
+	go build -o $(PGM)-go $(PGM).go
 
-build-lib bl:
-	npm install
-	npm run build-js
+build-emcc bc:
+	emcc $(PGM).c -Os -o $(PGM)-c.js
+	#emcc $(PGM).c -Os -s WASM=1 -s SIDE_MODULE=1 -o $(PGM)-c.wasm
 
-build-wasm bw:
-	npm run build-wasm
+build-rust br:
+	rustup default nightly
+	rustup target add wasm32-unknown-emscripten
+	#rustc --target=wasm32-unknown-emscripten $(PGM).rs -o $(PGM)-rs.js -C opt-level=s	
+	rustc --target=wasm32-unknown-emscripten $(PGM).rs -o $(PGM)-rs.html
 
-test t:
-	-npm test	# call cargo test
-	#-cargo test
+build-go bg:
+	GOARCH=wasm GOOS=js go build -o $(PGM)-go.wasm $(PGM).go
+
+run r: 
+	node --expose-wasm $(PGM)-c.js
+	node --expose-wasm $(PGM)-rs.js
+
+version v:
+	@gcc --version
+	@rustc --version
+	@go version
 
 clean:
-	cargo clean
+	rm -f $(PGM)
 
-list:
-	cargo install --list
-
-run r:
-	npm start &
-
-kill k:
-	killall npm node
-
-BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
-#BROWSER=firefox
-view v:
-	$(BROWSER) http://localhost:4000
-
-backup bak:
+bak:
 	cp Makefile ~/makefiles/Makefile.wasm
 
