@@ -25,7 +25,7 @@ edit-readme er:
 
 run r:
 	@echo ""
-	@echo "make run [update:rp|upgrade:ra|git:rg]"
+	@echo "make run [update:rp|upgrade:ra|copy:rc|git:rg]"
 	@echo ""
 
 run-upate rp:

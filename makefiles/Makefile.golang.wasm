@@ -5,8 +5,10 @@ all: usage
 
 usage:
 	@echo ""
-	@echo "usage: make [edit|build|run]"
+	@echo "usage: make [edit|build|run|kill|copy]"
 	@echo ""
+
+PGM=main
 
 edit e:
 	vi main.go
@@ -24,8 +26,13 @@ edit-make em:
 	vi Makefile
 
 build-go bg:
-	GOOS=js GOARCH=wasm go build $(PGM).go -o $(PGM).wasm
-	#gopherjs build -o main.js ./main.go
+	GOOS=js GOARCH=wasm go build -o $(PGM).wasm $(PGM).go
+	#gopherjs build -o $(PGM).js $(PGM).go
+
+run r:
+	@echo ""
+	@echo "make (run) [client|server]"
+	@echo ""
 
 run-server rs:
 	caddy &
@@ -37,6 +44,19 @@ run-client rc:
 kill k:
 	killall caddy
 
-backup bak:
+clean:
+	rm -f $(PGM).wasm
+
+copy c:
+	@echo ""
+	@echo "make (copy) [wasm|backup]"
+	@echo ""
+
+copy-wasm cw:
+	cp $(GOROOT)/src/misc/wasm/wasm_exec.js
+
+copy-backup cb bak:
 	cp Makefile ~/makefiles/Makefile.golang.wasm
+	ls -al ~/makefiles
+
 

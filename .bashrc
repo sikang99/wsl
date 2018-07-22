@@ -131,9 +131,10 @@ fi
 # set Golang dev environment
 if [ -d "$HOME/coding/go" ]; then
 	export GOPATH=$HOME/coding/go
-	export GOROOT=$GOPATH/root/gowasm
+	#export GOROOT=$GOPATH/root/gowasm
+	export GOROOT=$GOPATH/root/go1.11beta1
+	#export GOROOT=$GOPATH/root/go1.11beta2
 	#export GOROOT=$GOPATH/root/go1.10.3
-	#export GOROOT=$GOPATH/root/go1.11beta1
 	export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 	echo "Go setting in $GOPATH, $GOROOT ..."
 fi
@@ -191,6 +192,7 @@ if [ -d "$HOME/coding/cpp/src/emsdk/" ]; then
 	export PATH=$PATH:$EMSDK/binaryen/master_64bit_binaryen/bin
 	echo "EMSDK setting in $EMSDK ..."
 fi
+
 
 # Set X-Window/docker environment variables
 export DISPLAY='127.0.0.1:0.0'
