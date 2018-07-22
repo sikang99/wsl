@@ -193,6 +193,10 @@ if [ -d "$HOME/coding/cpp/src/emsdk/" ]; then
 	echo "EMSDK setting in $EMSDK ..."
 fi
 
+if [ -d "/c" ]; then
+	sudo mount --bind /mnt/c /c
+	echo "sudo mount --bind /mnt/c /c"
+fi
 
 # Set X-Window/docker environment variables
 export DISPLAY='127.0.0.1:0.0'

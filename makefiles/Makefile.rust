@@ -28,22 +28,32 @@ edit-make em:
 #----------------------------------------------------------
 install i:
 	@echo ""
-	@echo "make install [stable|nightly|version]"
+	@echo "make install [rust|stable|nightly|wasm|version]"
 	@echo ""
 
-install-stable is:
+install-rust ir:
 	curl https://sh.rustup.rs -sSf | sh
+
+install-stable is:
+	rustup default stable
+	rustup update stable
 
 install-nighly in:
 	rustup default nightly
-	rustup target add wasm32-unknown-unknown --toolchain nightly
-	cargo install wasm-gc
+	rustup update nightly
+	#rustup target add asmjs-unknown-emscripten --toolchain nightly
+	#rustup target add wasm32-unknown-emscripten --toolchain nightly
+	#rustup target add wasm32-unknown-unknown --toolchain nightly
+
+install-wasm iw:
+	-cargo install wasm-bindgen-cli wasm-gc wasm-pack wasm-nm
+	-cargo install --list
 
 install-version iv:
-	@cat /etc/lsb-release
 	@cargo --version
 	@rustc --version
 	@rustdoc --version
+	@lsb_release -a
 #----------------------------------------------------------
 run r:
 	@echo ""
