@@ -50,14 +50,18 @@ Setting Linux Environment for Windows 10
 
 
 ### History
-- 2018/07/20:
-   To download the web path without upper paths
+- 2018/07/22: To mount c drive in docker,
+```
+$ sudo mount --bind /mnt/c /c
+$ findmnt
+```
+
+- 2018/07/20: To download the web path without upper paths
 ```
 $ wget -r --no-parent http://www.itec.aau.at/ftp/datasets
 ```
 
-- 2018/07/13:
-   To replace old docker.io package to the new docker-ce,
+- 2018/07/13: To replace old docker.io package to the new docker-ce,
 ```
 sudo mv /var/lib/dpkg/info/docker.* /tmp/
 sudo dpkg --remove --force-remove-reinstreq docker.io
