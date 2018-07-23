@@ -11,6 +11,7 @@ usage:
 
 PGM=hello
 
+# ------------------------------------------------------------------
 edit e:
 	@echo ""
 	@echo "make (edit) [c|rust|go]"
@@ -28,6 +29,7 @@ edit-go eg:
 edit-make em:
 	vim Makefile
 
+# ------------------------------------------------------------------
 build b:
 	@echo ""
 	@echo "make (build) [binary:bb|emcc:bc|rust:br|go:bg]"
@@ -51,10 +53,23 @@ build-rust br:
 build-go bg:
 	GOARCH=wasm GOOS=js go build -o $(PGM)-go.wasm $(PGM).go
 
+# ------------------------------------------------------------------
 run r: 
+	@echo ""
+	@echo "make (run) [node|client|server]"
+	@echo ""
+
+run-node rn: 
 	node --expose-wasm $(PGM)-c.js
 	node --expose-wasm $(PGM)-rs.js
 
+run-client rc:
+	http://localhost:5000/
+
+run-server rs:
+	serve
+
+# ------------------------------------------------------------------
 version v:
 	@gcc --version
 	@rustc --version
