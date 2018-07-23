@@ -50,6 +50,8 @@ Setting Linux Environment for Windows 10
 
 
 ### History
+- 2018/07/23: To recover the errneous file of /etc/suoders, reboot the recover mode and do select the network mode, and next root shell, and next edit the sudoers file.
+
 - 2018/07/22: To mount c drive in docker,
 ```
 $ sudo mount --bind /mnt/c /c
@@ -66,7 +68,7 @@ $ wget -r --no-parent http://www.itec.aau.at/ftp/datasets
 sudo mv /var/lib/dpkg/info/docker.* /tmp/
 sudo dpkg --remove --force-remove-reinstreq docker.io
 sudo apt-get remove docker.io
-sudo apt-get autoremove && sudo apt-get autoclean
+sudo apt-get autoremov && sudo apt-get autoclean
 
 closed and reopened bash (WSL)
 sudo apt-get install docker-ce
