@@ -50,6 +50,7 @@ Setting Linux Environment for Windows 10
 
 
 ### History
+- 2018/07/23 : Install docker on Ubuntu 18.04 of Hansung notebook  
 - 2018/07/23: To recover the errneous file of /etc/suoders, reboot the recover mode and do select the network mode, and next root shell, and next edit the sudoers file.
 
 - 2018/07/22: To mount c drive in docker,

@@ -1,37 +1,56 @@
 #
-# Makefile
+# Makefile by stoney
 #
 all: usage
 
-usage:
-	@echo ""
-	@echo "usage: make [edit|build|run]"
-	@echo ""
-
-PGM=vector
-#PGM=vision
+GO=go
+GODOWN=go1.11beta2
 
 GLFW_INCLUDE_DIR = $(shell pkg-config --cflags glfw3)
 GLFW_LIB_DIR = $(shell pkg-config --libs glfw3)
 
-edit e:
-	vi $(PGM).go
-
-edit-make em:
-	vi Makefile
+#---------------------------------------------------------------
+usage:
+	@echo ""
+	@echo "usage: make [edit|install]"
+	@echo ""
 
 edit-readme er:
-	vi README.md
+	vim README.md
 
-build b: $(PGM).go
-	go build -o $(PGM) $(PGM).go
-
-run r:
-	go run $(PGM).go
-
-view v:
-	eog *.jpg *.png
+edit-make em:
+	vim Makefile
 
 clean:
-	rm -f $(PGM)
+	$(GO) clean
+
+#---------------------------------------------------------------
+install i:
+	@echo ""
+	@echo "make install [wasm|latest|version]"
+	@echo ""
+
+# https://blog.gopheracademy.com/advent-2017/go-wasm/
+install-wasm iw:
+	git clone https://go.googlesource.com/go
+	cd go
+	git remote add neelance https://github.com/neelance/go
+	git fetch --all
+	git checkout wasm-wip
+	cd src
+	./make.bash
+
+install-tools it:
+	go get -u golang.org/x/tools/...
+	#sudo apt install golang-golang-x-tools
+
+# ex) make iv GOVERSION=go1.11beta1
+install-version iv:
+	$(GO) get golang.org/x/build/version/$(GODOWN)
+	$(GODOWN) download
+
+bak:
+	cp Makefile ~/makefiles/Makefile.golang
+	ls -al ~/makefiles
+
 

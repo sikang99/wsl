@@ -196,6 +196,7 @@ fi
 if [ "`findmnt /c`" == "" ]; then
 	sudo mount --bind /mnt/c /c
 	echo "Mount /mnt/c to /c"
+	findmnt
 fi
 
 # Set X-Window/docker environment variables

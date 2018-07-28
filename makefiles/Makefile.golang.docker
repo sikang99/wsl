@@ -1,0 +1,102 @@
+#
+# Makefile by Stoney (sikang99@gmail.com)
+# 	- go development with dockerization
+#
+all:
+	@echo ""
+	@echo "usage: make [edit|build|run|docker|module|vendor]"
+	@echo ""
+
+PGM=vgo-docker-example
+
+build b:
+	go build -o $(PGM) main.go
+
+run r:
+	./$(PGM)
+
+clean:
+	rm -f $(PGM)
+
+bak:
+	cp Makefile ~/makefiles/Makefile.golang.docker
+	ls ~/makefiles
+
+# ---------------------------------------------------------------
+edit e:
+	@echo ""
+	@echo "make (edit) [go|docker|make]"
+	@echo ""
+
+edit-go eg:
+	vi main.go
+
+edit-docker ed:
+	vi Dockerfile
+
+edit-make em:
+	vi Makefile
+
+get-source gs:
+	go get -u github.com/elithrar/vgo-docker-example
+
+# ---------------------------------------------------------------
+docker d:
+	@echo ""
+	@echo "make (docker) [edit|build|run]"
+	@echo ""
+
+docker-edit de:
+	vi Dockerfile
+
+docker-build db:
+	docker build -t vgo-docker-example:latest .
+
+docker-run dr:
+	docker run vgo-docker-example:latest
+
+# ---------------------------------------------------------------
+show s:
+	@echo ""
+	@echo "make (show) [module:sm|vendor:sv]"
+	@echo ""
+
+show-module sm:
+	@cat go.mod
+
+show-vendor sv:
+	@cat vendor/vendor.json
+
+# ---------------------------------------------------------------
+module m:
+	@echo ""
+	@echo "make (module) [edit|vendor|help]"
+	@echo ""
+
+module-edit me:
+	vi go.mod
+
+module-vendor mv:
+	go mod -vendor
+
+module-help mh:
+	go help mod 
+	go help modules
+
+# ---------------------------------------------------------------
+vendor v:
+	@echo ""
+	@echo "make (vendor) [init|list|edit]"
+	@echo ""
+
+vendor-init vi:
+	govendor init
+	govendor add +external
+
+vendor-list vl:
+	govendor list
+
+vendori-edit ve:
+	vi vendor/vendor.json
+
+
