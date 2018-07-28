@@ -6,9 +6,10 @@ all: usage
 
 usage:
 	@echo ""
-	@echo "usage: make [e:dit|r:un|s:et]"
+	@echo "usage: make [e:dit|r:un|g:it|s:et]"
 	@echo ""
 
+# -------------------------------------------------------------------------------
 edit e:
 	@echo ""
 	@echo "make e:dit [m:ake|r:eadme]"
@@ -23,14 +24,14 @@ edit-template et:
 edit-readme er:
 	vi README.md
 
+# -------------------------------------------------------------------------------
 run r:
 	@echo ""
-	@echo "make run [update:rp|upgrade:ra|copy:rc|git:rg]"
+	@echo "make run [update:rp|upgrade:ra|copy:rc]"
 	@echo ""
 
-run-upate rp:
-	sudo apt-get update
-	sudo apt-get upgrade
+run-upate ru:
+	sudo apt update && sudo apt upgrade && sudo apt autoremove
 
 run-upgrade ra:
 	sudo -S apt-mark hold procps strace sudo
@@ -39,6 +40,12 @@ run-upgrade ra:
 run-copy rc:
 	ls $(DOWNLOAD)/WAVE/*
 	cp $(DOWNLOAD)/WAVE/* doc/WAVE/
+
+# -------------------------------------------------------------------------------
+git g:
+	@echo ""
+	@echo "make (git) [init|push|pull|clean]"
+	@echo ""
 
 git-init gi:
 	git config --global user.name "Stoney Kang"
@@ -58,6 +65,10 @@ git-push gp:
 git-sync gs:
 	git pull
 
+git-clean gc:
+	rm -f /home/stoney/.git/index.lock
+
+# -------------------------------------------------------------------------------
 set s:
 	@echo ""
 	@echo "make set [git|display|docker]"
@@ -71,6 +82,4 @@ set-display sd:
 set-docker sk:
 	export DOCKER_HOST='tcp://0.0.0.0:2375'
 
-clean-git cg:
-	rm -f /home/stoney/.git/index.lock
-
+# -------------------------------------------------------------------------------
