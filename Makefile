@@ -40,17 +40,7 @@ run-copy rc:
 	ls $(DOWNLOAD)/WAVE/*
 	cp $(DOWNLOAD)/WAVE/* doc/WAVE/
 
-run-git rg:
-	git add README.md Makefile .bashrc .vimrc doc/ install/ makefiles/
-	git commit -m "add some stuff including makefiles"
-	git push -u origin master
-
-set s:
-	@echo ""
-	@echo "make set [git|display|docker]"
-	@echo ""
-
-set-git sg:
+git-init gi:
 	git config --global user.name "Stoney Kang"
 	git config --global user.email sikang99@gmail.com
 	git init
@@ -59,6 +49,19 @@ set-git sg:
 	git remote add origin https://github.com/sikang99/wsl.git
 	git remote set-url origin https://sikang99:****@github.com/sikang99/wsl.git
 	git push -u origin master
+
+git-push gp:
+	git add README.md Makefile .bashrc .vimrc doc/ install/ makefiles/
+	git commit -m "add some stuff including makefiles"
+	git push -u origin master
+
+git-sync gs:
+	git pull
+
+set s:
+	@echo ""
+	@echo "make set [git|display|docker]"
+	@echo ""
 
 set-display sd:
 	sudo apt install dbus-x11
