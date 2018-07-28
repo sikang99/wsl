@@ -1,0 +1,35 @@
+#
+# Makefile by Stoney
+#	- build and install the latest version of ffmpeg and libraries
+#
+all: usage
+
+usage:
+	@echo ""
+	@echo "usage: make [1:get|2:build|3:install|4:run]"
+	@echo ""
+
+edit-make em:
+	vi Makefile
+
+#TARGET=ffmpeg-3.4.4
+TARGET=ffmpeg-4.0.2
+
+1 get:
+	wget https://ffmpeg.org/releases/$(TARGET).tar.bz2
+	bzip2 -cd $(TARGET).tar.bz2 | tar xvf -
+	mv $(TARGET).tar.bz2 bak/
+
+2 build:
+	cd $(TARGET) && ./configure
+
+3 install:
+	cd $(TARGET) && sudo make install
+
+4 run:
+	/usr/local/bin/ffmpeg -version
+
+.PHONY: bak
+bak:
+	@cp Makefile ~/makefiles/Makefile.ffmpeg
+	@ls -al ~/makefiles
