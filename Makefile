@@ -44,7 +44,7 @@ run-copy rc:
 # -------------------------------------------------------------------------------
 git g:
 	@echo ""
-	@echo "make (git) [init|push|pull|clean]"
+	@echo "make (git) [init|push:gu|pull:gs|clean]"
 	@echo ""
 
 git-init gi:
@@ -57,12 +57,12 @@ git-init gi:
 	git remote set-url origin https://sikang99:****@github.com/sikang99/wsl.git
 	git push -u origin master
 
-git-push gp:
+git-push gu:
 	git add README.md Makefile .bashrc .vimrc doc/ install/ makefiles/
 	git commit -m "add some stuff including makefiles"
 	git push -u origin master
 
-git-sync gs:
+git-pull gs:
 	git pull
 
 git-clean gc:
