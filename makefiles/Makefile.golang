@@ -49,8 +49,16 @@ install-version iv:
 	$(GO) get golang.org/x/build/version/$(GODOWN)
 	$(GODOWN) download
 
+install-module im:
+	GO111MODULE=on go mod -init -module github.com/davecheney/httpstat
+
+#---------------------------------------------------------------
 bak:
 	cp Makefile ~/makefiles/Makefile.golang
 	ls -al ~/makefiles
 
+diff:
+	diff Makefile ~/makefiles/Makefile.golang
+
+#---------------------------------------------------------------
 

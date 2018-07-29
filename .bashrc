@@ -131,10 +131,11 @@ fi
 # set Golang dev environment
 if [ -d "$HOME/coding/go" ]; then
 	export GOPATH=$HOME/coding/go
+	export GOSRC=$GOPATH/src
 	#export GOROOT=$GOPATH/root/gowasm
 	#export GOROOT=$GOPATH/root/go1.11beta1
-	#export GOROOT=$GOPATH/root/go1.11beta2
-	export GOROOT=$GOPATH/root/go1.10.3
+	export GOROOT=$GOPATH/root/go1.11beta2
+	#export GOROOT=$GOPATH/root/go1.10.3
 	export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 	echo "Go setting in $GOPATH, $GOROOT ..."
 fi

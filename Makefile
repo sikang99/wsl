@@ -30,7 +30,7 @@ run r:
 	@echo "make run [update:rp|upgrade:ra|copy:rc]"
 	@echo ""
 
-run-upate ru:
+run-upate rp:
 	sudo apt update && sudo apt upgrade && sudo apt autoremove
 
 run-upgrade ra:
