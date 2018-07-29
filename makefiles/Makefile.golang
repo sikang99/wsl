@@ -3,6 +3,7 @@
 #
 all: usage
 
+#---------------------------------------------------------------
 GO=go
 GODOWN=go1.11beta2
 
@@ -12,7 +13,7 @@ GLFW_LIB_DIR = $(shell pkg-config --libs glfw3)
 #---------------------------------------------------------------
 usage:
 	@echo ""
-	@echo "usage: make [edit|install]"
+	@echo "usage: make [edit|clean|install|dep|version]"
 	@echo ""
 
 edit-readme er:
@@ -24,6 +25,10 @@ edit-make em:
 clean:
 	$(GO) clean
 
+version v:
+	-@$(GO) version
+	-@git version
+
 #---------------------------------------------------------------
 install i:
 	@echo ""
@@ -31,6 +36,7 @@ install i:
 	@echo ""
 
 # https://blog.gopheracademy.com/advent-2017/go-wasm/
+# Not used any more after releaseing go1.11beta1
 install-wasm iw:
 	git clone https://go.googlesource.com/go
 	cd go
@@ -53,12 +59,27 @@ install-module im:
 	GO111MODULE=on go mod -init -module github.com/davecheney/httpstat
 
 #---------------------------------------------------------------
+dep:
+	@echo ""
+	@echo "make (dep) [init|ensure|version]"
+	@echo ""
+
+dep-init di:
+	dep init
+
+dep-ensure de:
+	dep ensure
+
+dep-version dv:
+	dep version
+
+#---------------------------------------------------------------
 bak:
 	cp Makefile ~/makefiles/Makefile.golang
 	ls -al ~/makefiles
 
 diff:
-	diff Makefile ~/makefiles/Makefile.golang
+	diff ~/makefiles/Makefile.golang Makefile
 
 #---------------------------------------------------------------
 
