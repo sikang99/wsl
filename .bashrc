@@ -132,10 +132,7 @@ fi
 if [ -d "$HOME/coding/go" ]; then
 	export GOPATH=$HOME/coding/go
 	export GOSRC=$GOPATH/src
-	#export GOROOT=$GOPATH/root/gowasm
-	#export GOROOT=$GOPATH/root/go1.11beta1
-	export GOROOT=$GOPATH/root/go1.11beta2
-	#export GOROOT=$GOPATH/root/go1.10.3
+	export GOROOT=$GOPATH/root/go
 	export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 	echo "Go setting in $GOPATH, $GOROOT ..."
 fi
@@ -152,6 +149,7 @@ if [ -d "$HOME/coding/c" ]; then
 	echo "C setting ..."
 	export LD_LIBRAY_PATH=$LD_LIBRARY_PATH:/usr/lib:/usr/local/lib
 	#export LIBRAY_PATH=$LIBRARY_PATH:/usr/local/lib
+	#export PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
 fi
 
 # set Python language dev environment
@@ -218,3 +216,171 @@ umask 0022
 
 source ~/.alacritty
 
+#---------------------------------------------------------------------
+# Utility Functions for Gophers
+#---------------------------------------------------------------------
+# direct directory jump
+function goto() {
+	if [ "$1" = "" ]; then
+		echo "usage: goto [.|..|root|path|stoney|sikang99|asm|webcam|http]"
+		return
+	fi
+	case $1 in
+    .)
+        pushd . ;;
+    ..)
+        popd ;;
+	root)
+		cd `echo $GOROOT/..` ;;
+	path)
+		cd `echo $GOPATH`/src ;;
+	stoney)
+		cd `echo $GOPATH`/src/stoney ;;
+	wasm)
+		cd /home/stoney/coding/c/src/start-wasm ;;
+	sikang*)
+		cd /home/stoney/coding/go/src/github.com/sikang99 ;;
+	webcam)
+		cd /home/stoney/coding/go/src/github.com/blackjack/webcam ;;
+	http*)
+		cd /home/stoney/coding/go/src/stoney/httpserver2/server ;;
+	*)
+		echo "'$1' is unknown" ;;
+	esac
+}
+
+# fast file finder from HOME
+function gofile() {
+	if [ $# = 0 ]; then
+		echo "usage: gofile <filename>"
+		return
+	fi
+	find ~ -iname $1 -type f -print
+}
+
+# fast package finder from GOPATH
+function gopath() {
+	if [ $# = 0 ]; then
+		echo "usage: gopath <package name>"
+		return
+	fi
+    list=$(eval find $GOPATH/src -iname $1 -type d -print)
+    if [ "$list" = "" ]; then
+        echo "> package '$1' not found in $GOPATH/src"
+        return
+    fi
+    for dir in $list; do
+        # exclude /vendor or /_ diectories
+        if [[ $dir = *"/vendor/"* ]] || [[ $dir = *"/_"* ]]; then
+            continue
+        else
+            cd $dir
+            return
+        fi
+    done
+    echo "> package '$1' not found in $GOPATH/src"
+}
+
+# go get a package and goto its directory
+# https://www.tldp.org/LDP/abs/html/string-manipulation.html
+function goget() {
+	if [ $# = 0 ]; then
+		echo "usage: goget [<option>] <package path>"
+		return
+	fi
+	package=""
+	option=""
+    flag=""
+	while [ "$1" != "" ]; do
+		case $1 in
+		http*://*.git)	
+			package=${1#http*://} 
+			package=${package%.git} 
+			;;
+        http*://*)	
+			#echo ${1#http*://} 
+			package=${1#http*://} 
+			;;
+        *.git) 
+            package=${1%.git} 
+            ;;
+        -u | -v)	
+            option="$option $1" 
+            ;;
+        -n | --nocd)	
+            flag="nocd" 
+            ;;
+        *) 	package=$1 ;;
+		esac
+		shift
+	done
+	echo "> go get $option $package"
+	go get $option $package
+    if [ "$flag" = "" ]; then
+        cd $GOPATH/src/${package%/...}
+    fi
+}
+
+# search repos of github.com with the given text
+function gogl() {
+	if [ $# = 0 ]; then
+		echo "usage: gogl <search text>"
+		return
+	fi
+    hub-search --lang=go $1
+}
+
+# Select a go version to use among installed
+function gover() {
+	if [ $# = 0 ]; then
+		echo "usage: gover <go version: 1.9|1.10|1.11>"
+		go version
+		return
+	fi
+	pushd . > /dev/null
+	cd $HOME/coding/go/root
+        if [ ! -L "go" ]; then 
+		ln -s go1.10.3 go
+	fi
+    case $1 in
+    *1.9*)
+        if [ -L "go" ] && [ -d "go1.9.7" ]; then 
+		unlink go 
+		ln -s go1.9.7 go
+	fi
+        ;;
+    *1.10* | stable)
+        if [ -L "go" ] && [ -d "go1.10.3" ]; then 
+		unlink go 
+		ln -s go1.10.3 go
+	fi 
+        ;;
+    *1.11* | beta3 | latest)	# go mod
+        if [ -L "go" ] && [ -d "go1.11beta3" ]; then 
+		unlink go 
+		ln -s go1.11beta3 go
+	fi 
+        ;;
+    beta2)
+        if [ -L "go" ] && [ -d "go1.11beta2" ]; then 
+		unlink go 
+		ln -s go1.11beta2 go
+	fi 
+        ;;
+    *)
+       echo "> '$1' is not installed. select 1.9, 1.10 or 1.11"
+       ;;
+   esac
+   popd > /dev/null
+   go version
+}
+
+# usage for internal shell functions
+function usage() {
+    goto
+    goget
+    gofile
+    gopath
+    gover
+    gogl
+}
