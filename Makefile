@@ -57,10 +57,17 @@ git-init gi:
 	git remote set-url origin https://sikang99:****@github.com/sikang99/wsl.git
 	git push -u origin master
 
+git-login gl:
+	git config --global user.email "sikang99@gmail.com"
+	git config --global user.name "Stoney Kang"
+	git config --global push.default matching
+	#git config --global push.default simple
+	git config credential.helper store
+
 git-push gu:
 	git add README.md Makefile .bashrc .vimrc doc/ install/ makefiles/
 	git commit -m "add some stuff including makefiles"
-	git push -u origin master
+	git push
 
 git-pull gs:
 	git pull
