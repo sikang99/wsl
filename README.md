@@ -2,6 +2,7 @@ Setting Linux Environment for Windows 10
 ===
 
 ### History
+* 2018/11/05 [What’s New for WSL in the Windows 10 October 2018 Update](https://blogs.msdn.microsoft.com/commandline/2018/11/05/whats-new-for-wsl-in-the-windows-10-october-2018-update/)
 * 2018/10/06 [Windows 10 now has its own exclusive Linux distro -- WLinux](https://betanews.com/2018/09/24/windows-10-now-has-its-own-exclusive-linux-distro-wlinux/)
 * 2018/06/11 [Why You Should Use Windows Subsystem for Linux](https://virtualizationreview.com/articles/2018/06/11/why-you-should-use-windows-subsystem-for-linux.aspx)
 * 2018/06/16 [Linux on Windows 10 (WSL)](https://www.eshlomo.us/linux-on-windows-10-wsl-intro/)
