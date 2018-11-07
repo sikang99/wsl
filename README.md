@@ -10,13 +10,13 @@ Setting Linux Environment for Windows 10
 * 2017/12/18 [윈도우 서브 리눅스에서 도커화 된 앱 개발하기](https://zeewhon.blogspot.com/2017/12/blog-post_18.html)
 * 2017/10/20 [WSL(Windows Subsystem for Linux) 사용기 및 ArchLinux로의 전환](https://tech.ssut.me/2017/10/20/install-archlinux-on-windows-subsystem-for-linux/)
 * 2017/10/12 [Windows 10에서 리눅스용 프로그램 설치하고 실행하기](https://medium.com/@rkttu/windows-10%EC%97%90%EC%84%9C-%EB%A6%AC%EB%88%85%EC%8A%A4%EC%9A%A9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B3%A0-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0-2cb0d7892d12)
-* [Fedora Environment on Windows Subsystem for Linux](https://www.variantweb.net/pub/fedora-wsl.pdf)
 * 2017/09/29 [Configuring a pretty and usable terminal emulator for WSL](https://blog.ropnop.com/configuring-a-pretty-and-usable-terminal-emulator-for-wsl/)
 
 ### Information for setting
 * [Windows Subsystem for Linux Documentation](https://docs.microsoft.com/ko-kr/windows/wsl/about)
 * [Setting up Ubuntu (WSL) for Linux GUI Apps](http://token2shell.com/howto/x410/setting-up-wsl-for-linux-gui-apps/)
 * [Updating WSL](http://wsl-guide.org/en/latest/update.html)
+* [Fedora Environment on Windows Subsystem for Linux](https://www.variantweb.net/pub/fedora-wsl.pdf)
 
 
 ### X-Window Server for Windows
@@ -50,6 +50,7 @@ Setting Linux Environment for Windows 10
 * [powerline/fonts](https://github.com/powerline/fonts) - Patched fonts for Powerline users
 * [mintty/wsltty](https://github.com/mintty/wsltty) - Mintty as a terminal for Bash on Ubuntu on Windows/WSL
 * [ethanhs/WSL-Programs](https://github.com/ethanhs/WSL-Programs) - A community powered list of programs that work (and those that don't) on the Windows subsystem for Linux
+* [WhitewaterFoundry/WLinux](https://github.com/WhitewaterFoundry/WLinux) - A Linux distro optimized for WSL based on Debian.
 
 
 ### History
