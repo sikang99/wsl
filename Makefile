@@ -65,8 +65,8 @@ git-login gl:
 	git config credential.helper store
 
 git-push gu:
-	git add README.md Makefile .bashrc .vimrc doc/ install/ makefiles/
-	git commit -m "add some stuff including makefiles"
+	git add *.md Makefile .bashrc .vimrc doc/ install/ makefiles/
+	git commit -m "update contents"
 	git push
 
 git-pull gs:
