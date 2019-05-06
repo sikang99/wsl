@@ -2,18 +2,13 @@
 # Makefile by stoney.kang (sikang99@gmail.com)
 # Linux setting for Windows 10
 #
-all: usage
-
 usage:
 	@echo ""
 	@echo "usage: make [e:dit|r:un|g:it|s:et]"
 	@echo ""
-
 # -------------------------------------------------------------------------------
 edit e:
-	@echo ""
 	@echo "make e:dit [m:ake|r:eadme]"
-	@echo ""
 
 edit-make em:
 	vi Makefile
@@ -24,11 +19,11 @@ edit-template et:
 edit-readme er:
 	vi README.md
 
+edit-history eh:
+	vi HISTORY.md
 # -------------------------------------------------------------------------------
 run r:
-	@echo ""
 	@echo "make run [update:rp|upgrade:ra|copy:rc]"
-	@echo ""
 
 run-upate rp:
 	sudo apt update && sudo apt upgrade && sudo apt autoremove
@@ -43,9 +38,7 @@ run-copy rc:
 
 # -------------------------------------------------------------------------------
 git g:
-	@echo ""
 	@echo "make (git) [init|push:gu|pull:gs|clean]"
-	@echo ""
 
 git-init gi:
 	git config --global user.name "Stoney Kang"
@@ -77,9 +70,7 @@ git-clean gc:
 
 # -------------------------------------------------------------------------------
 set s:
-	@echo ""
 	@echo "make set [git|display|docker]"
-	@echo ""
 
 set-display sd:
 	sudo apt install dbus-x11
