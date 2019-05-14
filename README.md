@@ -1,6 +1,7 @@
 ## Setting Linux Environment for Windows 10
 
 ### History
+- 2019/05/14 [Microsoft Confirms WSL To Co-Exist With WSL2, Other Windows Subsystem for Linux Details](https://www.phoronix.com/scan.php?page=news_item&px=WSL2-More-Details-FAQ)
 - 2019/05/06 [Announcing WSL 2](https://devblogs.microsoft.com/commandline/announcing-wsl-2/)
 - 2019/00/00
 * 2018/11/05 [What’s New for WSL in the Windows 10 October 2018 Update](https://blogs.msdn.microsoft.com/commandline/2018/11/05/whats-new-for-wsl-in-the-windows-10-october-2018-update/)
